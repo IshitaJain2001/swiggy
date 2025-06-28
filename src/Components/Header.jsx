@@ -5,6 +5,8 @@
  import { SlUser } from "react-icons/sl";
  import { CiSearch } from "react-icons/ci";
  import { IoCartOutline } from "react-icons/io5";
+ import { TbCurrentLocation } from "react-icons/tb";
+ import { RxCross1 } from "react-icons/rx";
  import "./Header.css"
 import { useState } from "react";
  export default function Header(){
@@ -12,20 +14,26 @@ import { useState } from "react";
     return(
         <>
         
-<div className="overlay"style={{display: toggle? "block" :"none"}} >
+<div className="overlay"style={{display: toggle? "block" :"none"}} onClick={() => setToggle(false)}>
 <div
-    style={{
-      background: "white",
-      padding: "20px",
-      borderRadius: "10px",
-      width: "300px",
-      margin: "10% auto",
-      textAlign: "center",
-    }}
-    onClick={(e) => e.stopPropagation()} // prevent closing when clicked inside
+   className="location-overlay"
+ 
+    onClick={(e) => e.stopPropagation()} 
   >
-    <h2>Search coming soon!</h2>
-    <button onClick={() => setToggle(false)}>Close</button>
+    <div onClick={() => setToggle(false)}>
+        <RxCross1 />
+        </div> 
+    <div>
+        <input type="text" placeholder="Search for area, street name..."/>
+        </div> 
+
+    <div>
+        <TbCurrentLocation />
+       <span>
+        Get Current Location
+        </span> 
+        <p>Using GPS</p>
+    </div>
   </div>
 </div>
         <header className="header">
