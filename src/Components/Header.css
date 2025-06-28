@@ -22,7 +22,8 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
+  font-size: 20px;
 }
 
 .logo img {
@@ -38,13 +39,31 @@
   gap: 4px;
   cursor: pointer;
 }
-
+.logo p{
+  display: flex;
+  align-items: center;
+}
 .location-overlay{
     height: 100vh;
     width: 600px;
     background: white;
     padding:0px 160px;
+padding-top: 50px;
+display: flex;
+flex-direction: column;
+    gap: 50px;
     
+}
+
+.location-overlay input{
+box-shadow: 
+  2px 2px 5px rgba(0, 0, 0, 0.152),   
+  -2px -2px 5px rgba(0, 0, 0, 0.152),
+  2px -2px 5px rgba(0, 0, 0, 0.152),  
+  -2px 2px 5px rgba(0, 0, 0, 0.152);
+  width: 400px;
+  padding: 10px;
+  border: 1px solid transparent;
 }
 .logo button{
     background-color: transparent;
@@ -68,4 +87,5 @@
 
 .icon:hover {
   color: #fc8019;
+  cursor: pointer;
 }

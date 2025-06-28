@@ -43,7 +43,7 @@ import { useState } from "react";
 
 <p>
     location
-   <button onClick={()=>setToggle(true)}> <RxCaretDown /> </button>
+   <button onClick={()=>setToggle(true)} style={{fontSize:"20px"}}> <RxCaretDown /> </button>
 </p>
             </div>
 
@@ -56,7 +56,7 @@ import { useState } from "react";
 
 <div className="offers icon">
 <BiSolidOffer />
-<p>Offers</p>
+<p>Offers <sup style={{color:"#fc8019"}}>new</sup></p>
 </div>
 
 <div className="help icon">
@@ -71,7 +71,7 @@ import { useState } from "react";
 
 <div className="cart icon">
     <IoCartOutline />
-    <p>Cart</p>
+    <p>Cart <sup>0</sup></p>
 </div>
             </div>
 
