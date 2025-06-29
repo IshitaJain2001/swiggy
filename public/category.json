@@ -1,0 +1,83 @@
+[
+    {
+        "image": "/assets/northindian.avif",
+        "path": "north-indian"
+    },
+    {
+        "image": "/assets/Pizzas.avif",
+        "path": "pizza"
+    },
+    {
+        "image": "/assets/Noodles.avif",
+        "path": "noodles"
+    },
+    {
+        "image": "/assets/pasta.avif",
+        "path": "pasta"
+    },
+    {
+        "image": "/assets/Paratha.avif",
+        "path": "paratha"
+    },
+    {
+        "image": "/assets/Biryani.avif",
+        "path": "biryani"
+    },
+    {
+        "image": "/assets/burger.avif",
+        "path": "burger"
+    },
+    {
+        "image": "/assets/cake.avif",
+        "path": "cakes"
+    },
+    {
+        "image": "/assets/Chinese.avif",
+        "path": "chinese"
+    },
+    {
+        "image": "/assets/cholebhature.avif",
+        "path": "chole-bature"
+    },
+    {
+        "image": "/assets/Dosa.avif",
+        "path": "dosa"
+    },
+    
+    {
+        "image": "/assets/icecream.avif",
+        "path": "ice-creams"
+    },
+    {
+        "image": "/assets/Idli.avif",
+        "path": "idli"
+    },
+    {
+        "image": "/assets/Pavbhaji.avif",
+        "path": "pav-bhaji"
+    },
+    {
+        "image": "/assets/Pureveg.avif",
+        "path": "pure-veg"
+    },
+    {
+        "image": "/assets/Rasmalai.avif",
+        "path": "rasmalai"
+    },
+    {
+        "image": "/assets/Rolls.avif",
+        "path": "rolls"
+    },
+    {
+        "image": "/assets/Salad.avif",
+        "path": "salad"
+    },
+    {
+        "image": "/assets/Salad-1.avif",
+        "path": "south-indian"
+    },
+    {
+        "image": "/assets/Shake.avif",
+        "path": "shakes"
+    }
+]
