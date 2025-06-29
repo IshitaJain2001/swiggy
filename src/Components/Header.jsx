@@ -1,4 +1,4 @@
-   import img from "../assets/logo.png"
+   import img from "../assets/logo.png" 
  import { RxCaretDown } from "react-icons/rx";
  import { BiSolidOffer } from "react-icons/bi";
  import { IoHelpBuoyOutline } from "react-icons/io5";
@@ -9,12 +9,13 @@
  import { RxCross1 } from "react-icons/rx";
  import "./Header.css"
 import { useState } from "react";
+
  export default function Header(){
  const [toggle,setToggle]=  useState(false)
     return(
         <>
         
-<div className="overlay"style={{display: toggle? "block" :"none"}} onClick={() => setToggle(false)}>
+<div className="overlay" style={{display: toggle? "block" :"none"}} onClick={() => setToggle(false)}>
 <div
    className="location-overlay"
  
@@ -23,19 +24,23 @@ import { useState } from "react";
     <div onClick={() => setToggle(false)}>
         <RxCross1 />
         </div> 
+
     <div>
         <input type="text" placeholder="Search for area, street name..."/>
         </div> 
 
     <div>
         <TbCurrentLocation />
-       <span>
+       <h3>
         Get Current Location
-        </span> 
-        <p>Using GPS</p>
+        </h3> 
+        <p style={{opacity:"0.7"}}>Using GPS</p>
     </div>
   </div>
 </div>
+
+
+
         <header className="header">
 
             <div className="logo">

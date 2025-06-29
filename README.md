@@ -13,3 +13,6 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 https://www.swiggy.com/city/delhi/order-online
+
+
+npm i react-icons 
