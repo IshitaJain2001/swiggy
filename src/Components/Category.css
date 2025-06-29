@@ -22,20 +22,28 @@
   cursor: pointer;
  }
 
- .items{
-    display: flex;
-    width: 90%;
-    overflow-x: auto;
-     scroll-behavior: smooth;
+.items {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
- }
+}
+
 
  .items img{
     height: 212px;
     width: 212px;
  }
 
+.category-containerr{
+    display: block;
+   
+    margin-top: 10px;
+}
 
 
 

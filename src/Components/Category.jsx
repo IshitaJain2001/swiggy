@@ -1,7 +1,7 @@
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
 import "./Category.css"
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 export default  function Category(){
     const [item,setItems]= useState([])
     useEffect(()=>{
@@ -13,7 +13,7 @@ setItems(data)
         }
         getData()
     },[])
-
+ const scrollRef= useRef()
    console.log(item);
    
     
@@ -25,10 +25,10 @@ setItems(data)
 <div className="mind-container">
 <h3>What's on your mind?</h3>
 <div className="arrows">
-    <button >
+    <button onClick={()=>scrollRef.current.scrollBy({left:-600, behavior:"smooth"})}>
         <FaArrowLeft />
     </button>
-    <button>
+    <button onClick={()=>scrollRef.current.scrollBy({left:400, behavior:"smooth"})}>
         <FaArrowRight />
     </button>
 </div>
@@ -36,13 +36,13 @@ setItems(data)
 
 
 </div>
-<div className="category-container">
-<div className="items">
+<div className="category-containerr">
+<div className="items" ref={scrollRef}>
     {
         item.length>0?
         item.map((food,index)=>{
 return(
-    <img src={food.image} alt="" />
+    <img src={food.image} alt="" key={index}/>
 )
         })
         : <p>nothing</p>
