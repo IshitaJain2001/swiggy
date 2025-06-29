@@ -23,7 +23,7 @@ setItems(data)
        
 <div className="category-container">
 <div className="mind-container">
-<h3>What's on your mind?</h3>
+<h2>What's on your mind?</h2>
 <div className="arrows">
     <button onClick={()=>scrollRef.current.scrollBy({left:-600, behavior:"smooth"})}>
         <FaArrowLeft />
@@ -48,6 +48,7 @@ return(
         : <p>nothing</p>
     }
 </div>
+<hr />
 </div>
 
 

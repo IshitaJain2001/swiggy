@@ -9,9 +9,51 @@
  import { RxCross1 } from "react-icons/rx";
  import "./Header.css"
 import { useState } from "react";
+import { useDispatch } from "react-redux";
 
  export default function Header(){
  const [toggle,setToggle]=  useState(false)
+const dispatch= useDispatch()
+ const getCurrentLocation = () => {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      async (position) => {
+        const { latitude, longitude } = position.coords;
+
+
+      
+        try {
+          const res = await fetch(
+            `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`
+          );
+          const data = await res.json();
+          console.log("Location Data:", data);
+          let exactlocation = ` ${data.address.town ||
+  data.address.village ||
+  data.address.county ||
+  "Unknown"}, ${data.address.state_district}, ${data.address.state}`
+          alert(exactlocation);
+
+
+  localStorage.setItem("location",exactlocation )
+  dispatch({
+    type:"ADD_CITY",
+    payload:data.address.county
+})
+        } catch (err) {
+          console.error("Error fetching location name:", err);
+        }
+      },
+      (error) => {
+        alert("Location access denied or unavailable.");
+        console.error(error);
+      }
+    );
+  } else {
+    alert("Geolocation is not supported by your browser.");
+  }
+};
+
     return(
         <>
         
@@ -29,7 +71,7 @@ import { useState } from "react";
         <input type="text" placeholder="Search for area, street name..."/>
         </div> 
 
-    <div>
+    <div onClick={getCurrentLocation}>
         <TbCurrentLocation />
        <h3>
         Get Current Location
@@ -47,7 +89,10 @@ import { useState } from "react";
 <img src={img} alt="" />
 
 <p>
-    location
+  {
+  localStorage.getItem("location")? localStorage.getItem("location")
+  : "Set Up Your Precise Location"
+  }
    <button onClick={()=>setToggle(true)} style={{fontSize:"20px"}}> <RxCaretDown /> </button>
 </p>
             </div>

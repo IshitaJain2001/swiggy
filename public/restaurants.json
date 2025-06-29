@@ -1,0 +1,22 @@
+[
+     {
+        "image": "/assets/pizza-hut.avif",
+        "offer": "Items at ₹179",
+        "title": "Pizza Hut",
+        "rating": 4.2,
+        "minTime": 30,
+        "maxTime": 40,
+        "name": "Pizzas",
+        "place": "Hauz Khas"
+    },
+    {
+        "image": "/assets/pizza-hut.avif",
+        "offer": "Items at ₹179",
+        "title": "Pizza Hut",
+        "rating": 4.2,
+        "minTime": 30,
+        "maxTime": 40,
+        "name": "Pizzas",
+        "place": "Hauz Khas"
+    }
+]
