@@ -33,6 +33,8 @@ export default function Restaurants() {
   );
 
   return (
+    <>
+   
     <div className="restaurant-container">
       <div className="inner-con">
         {/* Heading + Arrows Row */}
@@ -68,8 +70,12 @@ export default function Restaurants() {
         ) : (
           <p>No Restaurants in your area</p>
         )}
+        
       </div>
+     
     </div>
+     <hr />
+      </>
   );
 }
 

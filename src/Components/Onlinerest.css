@@ -1,0 +1,19 @@
+ .online-container{
+     margin-left: 150px;
+    
+    margin-top: 10px;
+ }
+
+ .buttons{
+    margin-top: 20px;
+    display: flex;
+    gap:10px;
+ }
+
+ .buttons button{
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid gray;
+   border-radius: 999px; 
+    font-weight: 700;
+ }
