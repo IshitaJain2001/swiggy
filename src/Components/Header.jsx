@@ -14,45 +14,64 @@ import { useDispatch } from "react-redux";
  export default function Header(){
  const [toggle,setToggle]=  useState(false)
 const dispatch= useDispatch()
- const getCurrentLocation = () => {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(
-      async (position) => {
-        const { latitude, longitude } = position.coords;
-
-
-      
-        try {
-          const res = await fetch(
-            `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`
-          );
-          const data = await res.json();
-          console.log("Location Data:", data);
-          let exactlocation = ` ${data.address.town ||
-  data.address.village ||
-  data.address.county ||
-  "Unknown"}, ${data.address.state_district}, ${data.address.state}`
-          alert(exactlocation);
-
-
-  localStorage.setItem("location",exactlocation )
-  dispatch({
-    type:"ADD_CITY",
-    payload:data.address.county
-})
-        } catch (err) {
-          console.error("Error fetching location name:", err);
-        }
-      },
-      (error) => {
-        alert("Location access denied or unavailable.");
-        console.error(error);
-      }
-    );
-  } else {
-    alert("Geolocation is not supported by your browser.");
+const getCurrentLocation = () => {
+  if (!navigator.geolocation) {
+    alert("Geolocation not supported by your browser.");
+    return;
   }
+
+  navigator.geolocation.getCurrentPosition(
+    async (position) => {
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+
+      try {
+        const response = await fetch(
+          `https://us1.locationiq.com/v1/reverse.php?key=pk.9722e4fef2206d625da690ca02372950&lat=${latitude}&lon=${longitude}&format=json`
+        );
+
+        const data = await response.json();
+        console.log("📍 LocationIQ Response:", data);
+
+        const address = data.address || {};
+
+        const city =
+          address.suburb ||
+          address.neighbourhood ||
+          address.city_district ||
+          address.city ||
+          address.town ||
+          address.village ||
+          address.county ||
+          "Unknown";
+
+        const state = address.state || "";
+        const country = address.country || "";
+
+        const locationString = `${city}, ${state}, ${country}`;
+        alert(`📍 Your location: ${locationString}`);
+
+        localStorage.setItem("location", locationString);
+
+        dispatch({
+          type: "ADD_CITY",
+          payload: city || state || "Unknown",
+        });
+      } catch (error) {
+        console.error("❌ Error fetching location:", error);
+        alert("Could not fetch location details.");
+      }
+    },
+    (error) => {
+      alert("Location access denied or unavailable.");
+      console.error(error);
+    },
+    { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+  );
 };
+
+
+
 
     return(
         <>
@@ -71,7 +90,7 @@ const dispatch= useDispatch()
         <input type="text" placeholder="Search for area, street name..."/>
         </div> 
 
-    <div onClick={getCurrentLocation}>
+    <div onClick={getCurrentLocation} style={{cursor:"pointer"}} >
         <TbCurrentLocation />
        <h3>
         Get Current Location
@@ -93,7 +112,7 @@ const dispatch= useDispatch()
   localStorage.getItem("location")? localStorage.getItem("location")
   : "Set Up Your Precise Location"
   }
-   <button onClick={()=>setToggle(true)} style={{fontSize:"20px"}}> <RxCaretDown /> </button>
+   <button onClick={()=>setToggle(true)} style={{fontSize:"20px", cursor:"pointer"}}> <RxCaretDown /> </button>
 </p>
             </div>
 
