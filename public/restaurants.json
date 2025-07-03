@@ -12,11 +12,64 @@
     {
         "image": "/assets/pizza-hut.avif",
         "offer": "Items at ₹179",
-        "title": "Pizza Hut",
+        "title": "Burger King",
         "rating": 4.2,
         "minTime": 30,
         "maxTime": 40,
         "name": "Pizzas",
-        "place": "Hauz Khas"
+        "place": "Hauz Khas, Delhi"
+    },
+        {
+        "image": "/assets/pizza-hut.avif",
+        "offer": "Items at ₹179",
+        "title": "JumboKing",
+        "rating": 4.2,
+        "minTime": 30,
+        "maxTime": 40,
+        "name": "Pizzas",
+        "place": "Civil Lines Tehsil,Delhi"
+    }
+    ,
+        {
+        "image": "/assets/pizza-hut.avif",
+        "offer": "Items at ₹179",
+        "title": "Haldirams",
+        "rating": 4.2,
+        "minTime": 30,
+        "maxTime": 40,
+        "name": "Pizzas",
+        "place": "Ashok Vihar ,Delhi"
+    }
+    ,
+        {
+        "image": "/assets/pizza-hut.avif",
+        "offer": "Items at ₹179",
+        "title": "Bikaner",
+        "rating": 4.2,
+        "minTime": 30,
+        "maxTime": 40,
+        "name": "Pizzas",
+        "place": "Pitampura ,Delhi"
+    }
+    ,
+        {
+        "image": "/assets/pizza-hut.avif",
+        "offer": "Items at ₹179",
+        "title": "KFC",
+        "rating": 4.2,
+        "minTime": 30,
+        "maxTime": 40,
+        "name": "Pizzas",
+        "place": "Ludhiana , Punjab"
+    },
+      {
+        "image": "/assets/pizza-hut.avif",
+        "offer": "Items at ₹179",
+        "title": "Bikaner",
+        "rating": 4.2,
+        "minTime": 30,
+        "maxTime": 40,
+        "name": "Pizzas",
+        "place": "Pitampura ,Delhi"
     }
 ]

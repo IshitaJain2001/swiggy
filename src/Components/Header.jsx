@@ -55,7 +55,7 @@ const getCurrentLocation = () => {
 
         dispatch({
           type: "ADD_CITY",
-          payload: city || state || "Unknown",
+          payload: state || "Unknown",
         });
       } catch (error) {
         console.error("❌ Error fetching location:", error);
