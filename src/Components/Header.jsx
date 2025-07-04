@@ -14,6 +14,8 @@ import { useDispatch } from "react-redux";
  export default function Header(){
  const [toggle,setToggle]=  useState(false)
 const dispatch= useDispatch()
+
+
 const getCurrentLocation = () => {
   if (!navigator.geolocation) {
     alert("Geolocation not supported by your browser.");
@@ -29,31 +31,17 @@ const getCurrentLocation = () => {
         const response = await fetch(
           `https://us1.locationiq.com/v1/reverse.php?key=pk.9722e4fef2206d625da690ca02372950&lat=${latitude}&lon=${longitude}&format=json`
         );
-
-        const data = await response.json();
-        console.log("📍 LocationIQ Response:", data);
-
-        const address = data.address || {};
-
-        const city =
-          address.suburb ||
-          address.neighbourhood ||
-          address.city_district ||
-          address.city ||
-          address.town ||
-          address.village ||
-          address.county ||
-          "Unknown";
-
-        const state = address.state || "";
+const data = await response.json();
+       const address = data.address || {};
+const city =
+          address.suburb ||address.neighbourhood ||address.city_district ||address.city ||address.town 
+          ||address.village ||address.county ||"Unknown";
+const state = address.state || "";
         const country = address.country || "";
-
-        const locationString = `${city}, ${state}, ${country}`;
+const locationString = `${city}, ${state}, ${country}`;
         alert(`📍 Your location: ${locationString}`);
-
-        localStorage.setItem("location", locationString);
-
-        dispatch({
+localStorage.setItem("location", locationString);
+dispatch({
           type: "ADD_CITY",
           payload: state || "Unknown",
         });
@@ -65,8 +53,7 @@ const getCurrentLocation = () => {
     (error) => {
       alert("Location access denied or unavailable.");
       console.error(error);
-    },
-    { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+    }
   );
 };
 

@@ -13,11 +13,8 @@ setItems(data)
         }
         getData()
     },[])
- const scrollRef= useRef()
-   console.log(item);
-   
-    
-    return(
+const scrollRef= useRef()
+ return(
         <>
         
        
@@ -28,7 +25,7 @@ setItems(data)
     <button onClick={()=>scrollRef.current.scrollBy({left:-600, behavior:"smooth"})}>
         <FaArrowLeft />
     </button>
-    <button onClick={()=>scrollRef.current.scrollBy({left:400, behavior:"smooth"})}>
+    <button onClick={()=>scrollRef.current.scrollBy({left:600, behavior:"smooth"})}>
         <FaArrowRight />
     </button>
 </div>
