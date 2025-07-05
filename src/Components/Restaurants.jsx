@@ -58,8 +58,8 @@ export default function Restaurants() {
             {filteredArea.map((res, index) => (
               <div className="restaurant-card" key={index}>
                 <img src={res.image} alt={res.name} />
-                <h3>{res.name}</h3>
-                <p className="title">{res.title}</p>
+                <h3>{res.title}</h3>
+                <p className="title">{res.name}</p>
                 <p className="rating">
                   ⭐ {res.rating} | ⏱ {res.minTime}-{res.maxTime} mins
                 </p>

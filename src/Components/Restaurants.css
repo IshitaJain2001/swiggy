@@ -1,4 +1,4 @@
-/* Outer full-width container */
+
 .restaurant-container {
   width: 100%;
   padding: 40px 20px;
@@ -7,13 +7,13 @@
   justify-content: center;
 }
 
-/* Inner max-width centered container */
+
 .inner-con {
   width: 100%;
   max-width: 1200px;
 }
 
-/* Heading row with arrows */
+
 .top-heading {
   display: flex;
   justify-content: space-between;
@@ -27,7 +27,7 @@
   margin: 0;
 }
 
-/* Arrow buttons */
+
 .arrows button {
 height: 40px;
     width: 40px;
@@ -43,7 +43,7 @@ height: 40px;
   color: #000;
 }
 
-/* Grid of restaurant cards */
+
 .restaurant-grid {
   display: flex;
   overflow-x: auto;
@@ -58,16 +58,16 @@ height: 40px;
 
 .restaurant-card {
   min-width: 290px;
-  background: white;
+
   border-radius: 10px;
   padding: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+ 
   flex-shrink: 0;
   transition: transform 0.2s ease;
 }
 
 .restaurant-card:hover {
-  transform: translateY(-5px);
+  transform: scale(0.95);
 }
 
 .restaurant-card img {
