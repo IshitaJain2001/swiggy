@@ -57,14 +57,15 @@
     }
     ,
         {
-        "image": "/assets/pizza-hut.avif",
-        "offer": "Items at ₹179",
+        "image": "/assets/kfc.avif",
+        "offer": "Items at ₹59",
         "title": "KFC",
-        "rating": 4.2,
-        "minTime": 30,
-        "maxTime": 40,
-        "name": "Pizzas",
-        "place": "Ludhiana , Punjab"
+        "rating": 4.5,
+        "minTime": 10,
+        "maxTime": 15,
+        "name": "Burgers, Rolls & Wraps, Fast Food",
+          "place": "Cannuaght Place",
+         "state" :"Delhi"
     },
       {
         "image": "/assets/pizza-hut.avif",

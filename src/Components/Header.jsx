@@ -13,6 +13,11 @@ import { useDispatch } from "react-redux";
 
  export default function Header(){
  const [toggle,setToggle]=  useState(false)
+
+ const [position,setPosistion] = useState({
+  latitude:"",
+  longitude:""
+ })
 const dispatch= useDispatch()
 
 
@@ -26,7 +31,15 @@ const getCurrentLocation = () => {
     async (position) => {
       const latitude = position.coords.latitude;
       const longitude = position.coords.longitude;
+      let positions= {
+        latitude,longitude
+      }
+      localStorage.setItem("coordinates", JSON.stringify(positions));
 
+dispatch({
+type:"ADD_LOCATION",
+ payload: JSON.parse(localStorage.getItem("coordinates"))
+})
       try {
         const response = await fetch(
           `https://us1.locationiq.com/v1/reverse.php?key=pk.9722e4fef2206d625da690ca02372950&lat=${latitude}&lon=${longitude}&format=json`
