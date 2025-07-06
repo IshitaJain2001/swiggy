@@ -60,7 +60,7 @@
         "image": "/assets/kfc.avif",
         "offer": "Items at ₹59",
         "title": "KFC",
-        "rating": 4.5,
+        "rating": 3.5,
         "minTime": 10,
         "maxTime": 15,
         "name": "Burgers, Rolls & Wraps, Fast Food",
@@ -75,6 +75,7 @@
         "minTime": 30,
         "maxTime": 40,
         "name": "Pizzas",
-        "place": "Pitampura ,Delhi"
+        "place": "Haryana"
+
     }
 ]
