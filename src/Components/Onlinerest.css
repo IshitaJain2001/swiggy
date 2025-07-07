@@ -1,5 +1,5 @@
  .online-container{
-     margin-left: 150px;
+     margin-left: 80px;
     
     margin-top: 10px;
  }
@@ -20,8 +20,8 @@
 
 .restaurant-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, 270px);
+  gap: 40px;
   margin-top: 20px;
 }
 

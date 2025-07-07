@@ -1,46 +1,71 @@
 import { useEffect, useRef, useState } from "react";
-import "./Onlinerest.css";
 import { RxCaretDown } from "react-icons/rx";
 import { LuGitPullRequest } from "react-icons/lu";
+import "./Onlinerest.css";
 
-export default function Onlinerest() {
-  const [city, setCity] = useState(localStorage.getItem("city") || "");
+export default function Onlinerest({ footerRef }) {
+  const [city] = useState(localStorage.getItem("city") || "Delhi");
   const [allRestaurants, setAllRestaurants] = useState([]);
-  const [visibleCount, setVisibleCount] = useState(8); // show 8 initially
+  const [visibleCount, setVisibleCount] = useState(0);
   const [loadedImages, setLoadedImages] = useState({});
+  const [isLoadingMore, setIsLoadingMore] = useState(false);
+  const [isFooterVisible, setIsFooterVisible] = useState(false);
+
   const loaderRef = useRef(null);
 
-  // Fetch data from public folder
+  // 📦 Fetch restaurant data
   useEffect(() => {
     fetch("/restaurants.json")
       .then((res) => res.json())
       .then((data) => {
-        const repeated = Array(20).fill(data).flat(); // repeat 10 times
+        const repeated = Array(10).fill(data).flat();
         setAllRestaurants(repeated);
+        setVisibleCount(8); // Initially show 8
       })
-      .catch((err) => console.error("Error loading JSON:", err));
+      .catch((err) => console.error("Fetch error:", err));
   }, []);
 
-  // Infinite Scroll
+  // 👁️ Observe footer visibility
   useEffect(() => {
+    if (!footerRef?.current) return;
+
     const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setTimeout(() => setVisibleCount((prev) => prev + 8), 500);
+      ([entry]) => setIsFooterVisible(entry.isIntersecting),
+      { threshold: 0.1 }
+    );
+
+    observer.observe(footerRef.current);
+
+    return () => observer.disconnect();
+  }, [footerRef]);
+
+  // 🔄 Infinite Scroll Handler
+  useEffect(() => {
+    if (!loaderRef.current) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (
+          entry.isIntersecting &&
+          !isLoadingMore &&
+          !isFooterVisible &&
+          visibleCount < allRestaurants.length
+        ) {
+          setIsLoadingMore(true);
+          setTimeout(() => {
+            setVisibleCount((prev) => prev + 8);
+            setIsLoadingMore(false);
+          }, 600);
         }
       },
       { threshold: 1 }
     );
 
-    const current = loaderRef.current;
-    if (current) observer.observe(current);
+    observer.observe(loaderRef.current);
 
-    return () => {
-      if (current) observer.unobserve(current);
-    };
-  }, [visibleCount]);
+    return () => observer.disconnect();
+  }, [isFooterVisible, isLoadingMore, visibleCount, allRestaurants.length]);
 
-  // Handle Image Load
   const handleImageLoad = (index) => {
     setLoadedImages((prev) => ({ ...prev, [index]: true }));
   };
@@ -49,14 +74,15 @@ export default function Onlinerest() {
     <div className="online-container">
       <h2>Restaurants with online food delivery in {city}</h2>
 
+      {/* Filter Buttons */}
       <div className="buttons">
         <button>
           Filter
-          <LuGitPullRequest style={{ transform: "rotate(90deg)", fontSize: "14px", marginLeft: "4px" }} />
+          <LuGitPullRequest style={{ transform: "rotate(90deg)", marginLeft: "4px" }} />
         </button>
         <button>
           Sort By
-          <RxCaretDown style={{ fontSize: "20px", marginLeft: "4px" }} />
+          <RxCaretDown style={{ marginLeft: "4px" }} />
         </button>
         <button>Fast Delivery</button>
         <button>New on Swiggy</button>
@@ -69,17 +95,15 @@ export default function Onlinerest() {
 
       {/* Restaurant Cards */}
       <div className="restaurant-grid">
-        {allRestaurants.slice(0, visibleCount).map((res, index) => (
-          <div className="restaurant-card" key={index}>
-            {!loadedImages[index] && <div className="img-loader"></div>}
-
+        {allRestaurants.slice(0, visibleCount).map((res, i) => (
+          <div className="restaurant-card" key={i}>
+            {!loadedImages[i] && <div className="img-loader"></div>}
             <img
               src={res.image}
               alt={res.name}
-              style={{ display: loadedImages[index] ? "block" : "none" }}
-              onLoad={() => handleImageLoad(index)}
+              style={{ display: loadedImages[i] ? "block" : "none" }}
+              onLoad={() => handleImageLoad(i)}
             />
-
             <h3>{res.name}</h3>
             <p>⭐ {res.rating} | ⏱ {res.deliveryTime}</p>
             <p className="offer">{res.offer}</p>
@@ -87,7 +111,12 @@ export default function Onlinerest() {
         ))}
       </div>
 
-      <div ref={loaderRef} className="scroll-loader"></div>
+      {/* Infinite Scroll Loader */}
+      {visibleCount < allRestaurants.length && (
+        <div ref={loaderRef} className="scroll-loader">
+          {isLoadingMore && <p>Loading more...</p>}
+        </div>
+      )}
     </div>
   );
 }

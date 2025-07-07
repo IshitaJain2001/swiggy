@@ -53,7 +53,8 @@
         "minTime": 20,
         "maxTime": 25,
         "name": "Kebabs, Fast food, Snacks,...",
-        "place": "Pitampura ,Delhi"
+        "place": "Pitampura ,Delhi",
+        "state":"Delhi"
     }
     ,
         {
@@ -75,7 +76,8 @@
         "minTime": 30,
         "maxTime": 40,
         "name": "Pizzas",
-        "place": "Haryana"
+        "place": "Haryana",
+        "state":"Haryana"
 
     }
 ]

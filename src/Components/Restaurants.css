@@ -44,7 +44,7 @@ height: 40px;
 }
 
 
-.restaurant-grid {
+.restaurant-grid1 {
   display: flex;
   overflow-x: auto;
   gap: 20px;

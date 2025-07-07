@@ -1,0 +1,113 @@
+.footer {
+  background-color: #f5f6f8;
+  font-family: 'Arial', sans-serif;
+  color: #3d4152;
+}
+
+/* Cuisine Section */
+.cuisine-wrapper {
+  padding: 40px 20px 10px;
+  text-align: center;
+}
+
+.cuisine-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 30px 0 20px;
+  color: #1c1c1c;
+}
+
+.cuisine-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.cuisine-btn {
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e2e7;
+  background-color: white;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+  color: #282c3f;
+  transition: all 0.2s ease-in-out;
+}
+
+.cuisine-btn:hover {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+}
+
+.orange-btn {
+  color: #fc8019;
+  font-weight: 600;
+  border-color: #fc8019;
+}
+
+/* Main Footer Links */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+.footer-logo p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #7e808c;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-column h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-column select {
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #595c66;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
