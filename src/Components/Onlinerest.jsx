@@ -25,7 +25,7 @@ export default function Onlinerest({ footerRef }) {
       .catch((err) => console.error("Fetch error:", err));
   }, []);
 
-  // 👁️ Observe footer visibility
+ 
   useEffect(() => {
     if (!footerRef?.current) return;
 
@@ -39,7 +39,7 @@ export default function Onlinerest({ footerRef }) {
     return () => observer.disconnect();
   }, [footerRef]);
 
-  // 🔄 Infinite Scroll Handler
+
   useEffect(() => {
     if (!loaderRef.current) return;
 

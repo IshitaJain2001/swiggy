@@ -8,7 +8,8 @@
         "maxTime": 20,
         "name": "Pizzas",
         "place": "Cannuaght Place",
-        "state" :"Delhi"
+        "state" :"Delhi",
+        "veg":"pure"
     },
     {
         "image": "/assets/burgerking.avif",
@@ -19,7 +20,8 @@
         "maxTime": 20,
         "name": "Burgers, American",
         "place": "Cannuaght Place",
-         "state" :"Delhi"
+         "state" :"Delhi",
+         "veg" :"no"
     },
         {
         "image": "/assets/dominos.avif",
@@ -30,7 +32,8 @@
         "maxTime": 25,
         "name": "Pizzas, Italian, Pastas, Desserts",
           "place": "Cannuaght Place",
-         "state" :"Delhi"
+         "state" :"Delhi",
+         "veg":"pure"
     }
     ,
         {
@@ -42,7 +45,8 @@
         "maxTime": 20,
         "name": "American",
          "place": "Cannuaght Place",
-         "state" :"Delhi"
+         "state" :"Delhi",
+         "veg":"no"
     }
     ,
         {
@@ -54,7 +58,8 @@
         "maxTime": 25,
         "name": "Kebabs, Fast food, Snacks,...",
         "place": "Pitampura ,Delhi",
-        "state":"Delhi"
+        "state":"Delhi",
+        "veg":"no"
     }
     ,
         {
