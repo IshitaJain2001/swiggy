@@ -1,20 +1,22 @@
 import Header from "./Components/Header"
 import "./App.css"
-import Category from "./Components/Category"
-import Restaurants from "./Components/Restaurants"
-import Onlinerest from "./Components/Onlinerest"
-import Footer from "./Components/Footer"
-import { useRef } from 'react';
+import { Route, Routes } from "react-router-dom"
+import Home from "./Components/Home"
+import Northindian from "./Components/Northindian"
+import Search from "./Components/Search"
+
+
 function App() {
 
-  const footerRef = useRef(null);
+  
   return (
     <>
     <Header/>
-    <Category/>
-    <Restaurants/>
-    <Onlinerest footerRef={footerRef} />
-    <Footer ref={footerRef}/>
+   <Routes>
+    <Route path="/" element={<Home/>}/>
+    <Route path="/north-indian" element={<Northindian/>}/>
+    <Route path="/search" element={<Search/>}/>
+   </Routes>
     </>
   )
 }

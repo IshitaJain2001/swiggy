@@ -2,6 +2,7 @@ import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
 import "./Category.css"
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 export default  function Category(){
     const [item,setItems]= useState([])
     useEffect(()=>{
@@ -39,7 +40,7 @@ const scrollRef= useRef()
         item.length>0?
         item.map((food,index)=>{
 return(
-    <img src={food.image} alt="" key={index}/>
+  <Link to={food.path}> <img src={food.image} alt="" key={index}/>  </Link> 
 )
         })
         : <p>nothing</p>

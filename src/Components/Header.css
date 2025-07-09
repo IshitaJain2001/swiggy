@@ -92,3 +92,7 @@ box-shadow:
   color: #fc8019;
   cursor: pointer;
 }
+a{
+ text-decoration: none;
+ color: black;
+}

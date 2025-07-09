@@ -10,6 +10,7 @@
  import "./Header.css"
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
  export default function Header(){
  const [toggle,setToggle]=  useState(false)
@@ -118,10 +119,10 @@ dispatch({
 
 
             <div className="icons">
-                <div className="search icon">
+               <Link to="/search"> <div className="search icon">
 <CiSearch /> 
 <p>Search</p>
-                </div>
+                </div> </Link> 
 
 <div className="offers icon">
 <BiSolidOffer />
