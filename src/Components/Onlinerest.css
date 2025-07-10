@@ -11,7 +11,8 @@
  }
 
  .buttons button{
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: white;
     padding: 10px 20px;
     border: 1px solid gray;
    border-radius: 999px; 
@@ -76,4 +77,83 @@
 
 .scroll-loader {
   height: 10px;
+}
+
+.active-filter {
+
+  color: orange;
+  /* font-weight: 700; */
+}
+.sort-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.sort-popup {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: white;
+  border-radius: 12px;
+  width: 220px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 12px;
+  z-index: 100;
+}
+
+.sort-option {
+  display: flex;
+  align-items: center;
+  padding: 10px 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.sort-option:hover {
+  background-color: #f9f9f9;
+}
+
+.circle {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  border: 2px solid #ff5722;
+  margin-right: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.circle.selected {
+  background-color: #ff5722;
+}
+
+.apply-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px 0;
+  background-color: #ff5722;
+  
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.filter-btn-with-count {
+  position: relative;
+  width: 110px;
+}
+
+.filter-count-badge {
+  position: absolute;
+  top: 8px;
+ left: 8px;
+margin-left: 3px;
+
+background:orange;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 1px 3px;
+  border-radius: 50%;
 }

@@ -3,13 +3,15 @@
         "image": "/assets/pizza-hut.avif",
         "offer": "Items at ₹179",
         "title": "Pizza Hut",
-        "rating": 4.3,
+        "rating": 2.3,
         "minTime": 15,
         "maxTime": 20,
         "name": "Pizzas",
         "place": "Cannuaght Place",
         "state" :"Delhi",
-        "veg":"pure"
+        "veg":"pure",
+        "price": 200,
+        "new": true
     },
     {
         "image": "/assets/burgerking.avif",
@@ -21,19 +23,23 @@
         "name": "Burgers, American",
         "place": "Cannuaght Place",
          "state" :"Delhi",
-         "veg" :"no"
+         "veg" :"no",
+         "price": 250,
+         "new": false
     },
         {
         "image": "/assets/dominos.avif",
         "offer": "Items at ₹75",
         "title": "Domino's Pizza",
-        "rating": 4.4,
+        "rating": 3.0,
         "minTime": 20,
         "maxTime": 25,
         "name": "Pizzas, Italian, Pastas, Desserts",
           "place": "Cannuaght Place",
          "state" :"Delhi",
-         "veg":"pure"
+         "veg":"pure",
+         "price": 500,
+         "new": true
     }
     ,
         {
@@ -41,25 +47,29 @@
         "offer": "Items at ₹49",
         "title": "McDonald's",
         "rating": 4.6,
-        "minTime": 15,
-        "maxTime": 20,
+        "minTime": 35,
+        "maxTime": 50,
         "name": "American",
          "place": "Cannuaght Place",
          "state" :"Delhi",
-         "veg":"no"
+         "veg":"no",
+         "price": 400 ,
+         "new": false
     }
     ,
         {
         "image": "/assets/faasos.avif",
         "offer": "Items at ₹89",
         "title": "Faasos- Wraps, Rolls &...",
-        "rating": 4.3,
+        "rating": 3.3,
         "minTime": 20,
         "maxTime": 25,
         "name": "Kebabs, Fast food, Snacks,...",
         "place": "Pitampura ,Delhi",
         "state":"Delhi",
-        "veg":"no"
+        "veg":"no",
+        "price": 200,
+        "new": true
     }
     ,
         {
@@ -71,18 +81,24 @@
         "maxTime": 15,
         "name": "Burgers, Rolls & Wraps, Fast Food",
           "place": "Cannuaght Place",
-         "state" :"Delhi"
+         "state" :"Delhi",
+          "veg":"pure",
+          "price": 600,
+          "new": false
     },
       {
         "image": "/assets/pizza-hut.avif",
         "offer": "Items at ₹179",
         "title": "Bikaner",
         "rating": 4.2,
-        "minTime": 30,
-        "maxTime": 40,
+        "minTime": 10,
+        "maxTime": 30,
         "name": "Pizzas",
         "place": "Haryana",
-        "state":"Haryana"
+        "state":"Haryana",
+         "veg":"pure",
+         "price": 289,
+         "new": true
 
     }
 ]
