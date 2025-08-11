@@ -163,7 +163,7 @@ const [activeFilterTab, setActiveFilterTab] = useState("Sort");
       <div className="filter-content-wrapper">
         {/* Sidebar */}
         <div className="filter-sidebar">
-          {["Sort", "Delivery Time", "Cuisines", "Explore", "Ratings", "Veg/Non-Veg"].map((item) => (
+          {["Sort", "Delivery Time", "Cuisines", "Explore", "Ratings", "Veg/Non-Veg","Offers", "Cost for two"].map((item) => (
             <div
               key={item}
               className={`sidebar-tab ${activeFilterTab === item ? "active" : ""}`}
@@ -195,7 +195,17 @@ const [activeFilterTab, setActiveFilterTab] = useState("Sort");
               ))}
             </>
           )}
-          {/* You can add more tab contents here */}
+
+
+           {activeFilterTab === "Delivery Time" && (
+      <>
+        <h4>FILTER BY</h4>
+        <label className="delivery-option">
+          <input type="checkbox" />
+          Fast Delivery
+        </label>
+      </>
+    )}
         </div>
       </div>
     </div>
