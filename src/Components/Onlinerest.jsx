@@ -19,6 +19,8 @@ export default function Onlinerest({ footerRef }) {
   const [newOnSwiggy, setNewOnSwiggy] = useState(false);
 const [showFilterPopup, setShowFilterPopup] = useState(false);
 const [activeFilterTab, setActiveFilterTab] = useState("Sort");
+const [isNonVeg, setIsNonVeg] = useState(false);
+
 
   const loaderRef = useRef(null);
 
@@ -92,14 +94,25 @@ const [activeFilterTab, setActiveFilterTab] = useState("Sort");
     newOnSwiggy
   ].filter(Boolean).length;
 
+  // let filteredRestaurants = allRestaurants.filter((res) => {
+  //   const isVegOk = isPureVeg ? res.veg === "pure" : true;
+  //   const isRatingOk = goodRating ? parseFloat(res.rating) >= 4 : true;
+  //   const isFastOk = fastDelivery ? parseInt(res.minTime) <= 25 : true;
+  //   const isUnder300 = lessThan300 ? parseInt(res.price) < 300 : true;
+  //   const isNew = newOnSwiggy ? res.new === true : true;
+  //   return isVegOk && isRatingOk && isFastOk && isUnder300 && isNew;
+  // });
+
   let filteredRestaurants = allRestaurants.filter((res) => {
-    const isVegOk = isPureVeg ? res.veg === "pure" : true;
-    const isRatingOk = goodRating ? parseFloat(res.rating) >= 4 : true;
-    const isFastOk = fastDelivery ? parseInt(res.minTime) <= 25 : true;
-    const isUnder300 = lessThan300 ? parseInt(res.price) < 300 : true;
-    const isNew = newOnSwiggy ? res.new === true : true;
-    return isVegOk && isRatingOk && isFastOk && isUnder300 && isNew;
-  });
+  const isVegOk = isPureVeg ? res.veg === "pure" : true;
+  const isNonVegOk = isNonVeg ? res.veg === "no" : true;
+  const isRatingOk = goodRating ? parseFloat(res.rating) >= 4 : true;
+  const isFastOk = fastDelivery ? parseInt(res.minTime) <= 25 : true;
+  const isUnder300 = lessThan300 ? parseInt(res.price) < 300 : true;
+  const isNew = newOnSwiggy ? res.new === true : true;
+  return isVegOk && isNonVegOk && isRatingOk && isFastOk && isUnder300 && isNew;
+});
+
 
   switch (selectedSort) {
     case "rating":
@@ -197,15 +210,78 @@ const [activeFilterTab, setActiveFilterTab] = useState("Sort");
           )}
 
 
-           {activeFilterTab === "Delivery Time" && (
-      <>
-        <h4>FILTER BY</h4>
-        <label className="delivery-option">
-          <input type="checkbox" />
-          Fast Delivery
-        </label>
-      </>
-    )}
+     {activeFilterTab === "Delivery Time" && (
+  <>
+    <h4>FILTER BY</h4>
+    <label className="delivery-option">
+      <input
+        type="checkbox"
+        checked={fastDelivery}
+        onChange={() => setFastDelivery((prev) => !prev)}
+      />
+      Fast Delivery
+    </label>
+  </>
+)}
+
+{activeFilterTab === "Ratings" && (
+  <>
+    <h4>FILTER BY</h4>
+
+    <label className="rating-option">
+      <input
+        type="checkbox"
+        checked={goodRating === 4.5}
+        onChange={() => setGoodRating(goodRating === 4.5 ? false : 4.5)}
+      />
+      Ratings 4.5+
+    </label>
+<br />
+    <label className="rating-option">
+      <input
+        type="checkbox"
+        checked={goodRating === 4.0}
+        onChange={() => setGoodRating(goodRating === 4.0 ? false : 4.0)}
+      />
+      Ratings 4.0+
+    </label>
+<br />
+    <label className="rating-option">
+      <input
+        type="checkbox"
+        checked={goodRating === 3.5}
+        onChange={() => setGoodRating(goodRating === 3.5 ? false : 3.5)}
+      />
+      Ratings 3.5+
+    </label>
+  </>
+)}
+
+{activeFilterTab === "Veg/Non-Veg" && (
+  <>
+    <h4>FILTER BY</h4>
+
+    <label className="veg-option">
+      <input
+        type="checkbox"
+        checked={isPureVeg}
+        onChange={() => setIsPureVeg((prev) => !prev)}
+      />
+      Pure Veg
+    </label>
+
+    <label className="veg-option">
+      <input
+        type="checkbox"
+        checked={isNonVeg}
+        onChange={() => setIsNonVeg((prev) => !prev)}
+      />
+      Non Veg
+    </label>
+  </>
+)}
+
+
         </div>
       </div>
     </div>
