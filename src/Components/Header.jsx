@@ -17,6 +17,7 @@ export default function Header() {
   const [showLogin, setShowLogin] = useState(false);
 
  const cartVal= useSelector((state)=>state.cartDetails.count)
+const { food, price, quantity } = useSelector((state) => state.cartDetails);
 
   const dispatch = useDispatch();
 
@@ -177,26 +178,59 @@ export default function Header() {
             <p>Sign In</p>
           </div>
 
-          <div className="cart icon">
-            <IoCartOutline />
-            <p>
-            <Link to="/Cart"> Cart <sup>{cartVal}</sup> </Link> 
-            </p>
- <div className="cart-popup">
+  {/* HEADER */}
+<div className="cart-wrapper">
+  <div className="cart icon">
+    <IoCartOutline />
+    <p>
+      <Link to="/Cart"> Cart <sup>{cartVal}</sup> </Link>
+    </p>
+  </div>
+
+  {/* CART POPUP */}
+  <div className="cart-popup">
     {cartVal === 0 ? (
-      <>
+      <div className="cart-empty">
         <h3>Cart Empty</h3>
         <p>
           Good food is always cooking! <br />
           Go ahead, order some yummy items from the menu.
         </p>
-      </>
+      </div>
     ) : (
-      <p>Your items will appear here...</p>
+      <div>
+      
+
+        <hr />
+
+        {food.map((item, index) => (
+          <div key={index} className="cart-item">
+            <p>
+              {item} x {quantity[index]}
+            </p>
+            <span>₹{price[index] * quantity[index]}</span>
+          </div>
+        ))}
+
+        <hr />
+
+        <div className="cart-subtotal">
+          <p>
+            Sub total <br />
+            <small>Extra charges may apply</small>
+          </p>
+          <span>
+            ₹
+            {price.reduce((acc, p, i) => acc + p * quantity[i], 0)}
+          </span>
+        </div>
+
+        <button className="checkout-btn">CHECKOUT</button>
+      </div>
     )}
   </div>
+</div>
 
-          </div>
         </div>
       </header>
     </>
