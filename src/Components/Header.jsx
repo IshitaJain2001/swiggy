@@ -182,6 +182,20 @@ export default function Header() {
             <p>
             <Link to="/Cart"> Cart <sup>{cartVal}</sup> </Link> 
             </p>
+ <div className="cart-popup">
+    {cartVal === 0 ? (
+      <>
+        <h3>Cart Empty</h3>
+        <p>
+          Good food is always cooking! <br />
+          Go ahead, order some yummy items from the menu.
+        </p>
+      </>
+    ) : (
+      <p>Your items will appear here...</p>
+    )}
+  </div>
+
           </div>
         </div>
       </header>
