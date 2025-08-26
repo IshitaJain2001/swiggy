@@ -94,14 +94,7 @@ const [isNonVeg, setIsNonVeg] = useState(false);
     newOnSwiggy
   ].filter(Boolean).length;
 
-  // let filteredRestaurants = allRestaurants.filter((res) => {
-  //   const isVegOk = isPureVeg ? res.veg === "pure" : true;
-  //   const isRatingOk = goodRating ? parseFloat(res.rating) >= 4 : true;
-  //   const isFastOk = fastDelivery ? parseInt(res.minTime) <= 25 : true;
-  //   const isUnder300 = lessThan300 ? parseInt(res.price) < 300 : true;
-  //   const isNew = newOnSwiggy ? res.new === true : true;
-  //   return isVegOk && isRatingOk && isFastOk && isUnder300 && isNew;
-  // });
+ 
 
   let filteredRestaurants = allRestaurants.filter((res) => {
   const isVegOk = isPureVeg ? res.veg === "pure" : true;
