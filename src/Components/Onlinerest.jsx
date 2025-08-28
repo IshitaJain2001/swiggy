@@ -21,7 +21,21 @@ const [showFilterPopup, setShowFilterPopup] = useState(false);
 const [activeFilterTab, setActiveFilterTab] = useState("Sort");
 const [isNonVeg, setIsNonVeg] = useState(false);
 
+const [tempSort, setTempSort] = useState("relevance");
 
+  const [tempFastDelivery, setTempFastDelivery] = useState(false);
+  const [tempGoodRating, setTempGoodRating] = useState(false);
+  const [tempIsPureVeg, setTempIsPureVeg] = useState(false);
+  const [tempIsNonVeg, setTempIsNonVeg] = useState(false);
+  const handleApply = () => {
+    setSelectedSort(tempSort);
+    setFastDelivery(tempFastDelivery);
+    setGoodRating(tempGoodRating);
+    setIsPureVeg(tempIsPureVeg);
+    setIsNonVeg(tempIsNonVeg);
+setTimeout(() => setShowFilterPopup(false), 0);
+  };
+ 
   const loaderRef = useRef(null);
 
   useEffect(() => {
@@ -167,7 +181,7 @@ const [isNonVeg, setIsNonVeg] = useState(false);
         </button>
       </div>
       <div className="filter-content-wrapper">
-        {/* Sidebar */}
+   
         <div className="filter-sidebar">
           {["Sort", "Delivery Time", "Cuisines", "Explore", "Ratings", "Veg/Non-Veg","Offers", "Cost for two"].map((item) => (
             <div
@@ -180,7 +194,7 @@ const [isNonVeg, setIsNonVeg] = useState(false);
           ))}
         </div>
 
-        {/* Right Content Area */}
+  
         <div className="filter-right-panel">
           {activeFilterTab === "Sort" && (
             <>
@@ -189,9 +203,9 @@ const [isNonVeg, setIsNonVeg] = useState(false);
                 <div
                   key={key}
                   className="sort-option"
-                  onClick={() => setSelectedSort(key)}
+                  onClick={() => setTempSort(key)}
                 >
-                  <span className={`circle ${selectedSort === key ? "selected" : ""}`}></span>
+                  <span className={`circle ${tempSort === key ? "selected" : ""}`}></span>
                   {key === "relevance" && "Relevance (Default)"}
                   {key === "delivery" && "Delivery Time"}
                   {key === "rating" && "Rating"}
@@ -209,72 +223,104 @@ const [isNonVeg, setIsNonVeg] = useState(false);
     <label className="delivery-option">
       <input
         type="checkbox"
-        checked={fastDelivery}
-        onChange={() => setFastDelivery((prev) => !prev)}
+        checked={tempFastDelivery}
+        onChange={() => setTempFastDelivery((prev) => !prev)}
       />
       Fast Delivery
     </label>
   </>
 )}
 
-{activeFilterTab === "Ratings" && (
-  <>
-    <h4>FILTER BY</h4>
-
-    <label className="rating-option">
-      <input
-        type="checkbox"
-        checked={goodRating === 4.5}
-        onChange={() => setGoodRating(goodRating === 4.5 ? false : 4.5)}
-      />
-      Ratings 4.5+
-    </label>
-<br />
-    <label className="rating-option">
-      <input
-        type="checkbox"
-        checked={goodRating === 4.0}
-        onChange={() => setGoodRating(goodRating === 4.0 ? false : 4.0)}
-      />
-      Ratings 4.0+
-    </label>
-<br />
-    <label className="rating-option">
-      <input
-        type="checkbox"
-        checked={goodRating === 3.5}
-        onChange={() => setGoodRating(goodRating === 3.5 ? false : 3.5)}
-      />
-      Ratings 3.5+
-    </label>
-  </>
-)}
+ {activeFilterTab === "Ratings" && (
+    <>
+      <h4>FILTER BY</h4>
+      {[4.5, 4.0, 3.5].map((rating) => (
+        <label key={rating} className="rating-option">
+          <input
+            type="checkbox"
+            checked={tempGoodRating === rating}
+            onChange={() =>
+              setTempGoodRating(tempGoodRating === rating ? false : rating)  /* ✅ temp state */
+            }
+          />
+          Ratings {rating}+
+        </label>
+      ))}
+    </>
+  )}
 
 {activeFilterTab === "Veg/Non-Veg" && (
-  <>
-    <h4>FILTER BY</h4>
+    <>
+      <h4>FILTER BY</h4>
+      <label className="veg-option">
+        <input
+          type="checkbox"
+          checked={tempIsPureVeg}
+          onChange={() => setTempIsPureVeg((prev) => !prev)}   
+        />
+        Pure Veg
+      </label>
 
-    <label className="veg-option">
-      <input
-        type="checkbox"
-        checked={isPureVeg}
-        onChange={() => setIsPureVeg((prev) => !prev)}
-      />
-      Pure Veg
-    </label>
+      <label className="veg-option">
+        <input
+          type="checkbox"
+          checked={tempIsNonVeg}
+          onChange={() => setTempIsNonVeg((prev) => !prev)}   
+        />
+        Non Veg
+      </label>
+    </>
+  )}
 
-    <label className="veg-option">
-      <input
-        type="checkbox"
-        checked={isNonVeg}
-        onChange={() => setIsNonVeg((prev) => !prev)}
-      />
-      Non Veg
-    </label>
-  </>
-)}
+   {activeFilterTab && (
+    <>
+ 
+   <button
+  className="apply-btn"
+  onClick={handleApply}
+  disabled={
+    tempSort === selectedSort &&
+    tempFastDelivery === fastDelivery &&
+    tempGoodRating === goodRating &&
+    tempIsPureVeg === isPureVeg &&
+    tempIsNonVeg === isNonVeg
+  }
+>
+  Apply
+</button>
 
+<button
+      className={`clear-btn-${(
 
+      
+        tempSort !== "relevance" ||
+        tempFastDelivery ||
+        tempGoodRating ||
+        tempIsPureVeg ||
+        tempIsNonVeg)
+          ? "active"   // orange active
+          : "disabled" // grey faded
+      }`}
+   
+      // disabled={
+      //   tempSort === "relevance" &&
+      //   !tempFastDelivery &&
+      //   !tempGoodRating &&
+      //   !tempIsPureVeg &&
+      //   !tempIsNonVeg
+      // }
+      onClick={() => {
+        setTempSort("relevance");
+        setTempFastDelivery(false);
+        setTempGoodRating(false);
+        setTempIsPureVeg(false);
+        setTempIsNonVeg(false);
+      }}
+    >
+      Clear Filters
+    </button>
+       </>
+  )}
         </div>
       </div>
     </div>

@@ -276,3 +276,20 @@
 .filter-sidebar::-webkit-scrollbar-track {
   background: transparent;
 }
+
+.apply-btn{
+color: black;
+}
+
+.clear-btn-disabled {
+  
+  color: black;
+cursor: none;
+}
+
+.clear-btn-active {
+ 
+  color: orange;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
