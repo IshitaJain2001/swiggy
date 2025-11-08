@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Fresh Fruits",
+    "image": "/assets/fruits.png",
+    "path": "/groceries/fruits"
+  },
+  {
+    "id": 2,
+    "title": "Vegetables",
+    "image": "/assets/fruits.png",
+    "path": "/groceries/vegetables"
+  },
+  {
+    "id": 3,
+    "title": "Dairy & Eggs",
+    "image": "/assets/dairy.png",
+    "path": "/groceries/dairy"
+  },
+  {
+    "id": 4,
+    "title": "Bakery",
+    "image": "/assets/baby.png",
+    "path": "/groceries/bakery"
+  },
+  {
+    "id": 5,
+    "title": "Snacks",
+    "image": "/assets/bath.png",
+    "path": "/groceries/snacks"
+  },
+  {
+    "id": 6,
+    "title": "Beverages",
+    "image": "/assets/beauty.png",
+    "path": "/groceries/beverages"
+  },
+  {
+    "id": 7,
+    "title": "Household Essentials",
+    "image": "/assets/biskut.png",
+    "path": "/groceries/household"
+  },
+  {
+    "id": 8,
+    "title": "Personal Care",
+    "image": "/assets/breakfast.png",
+    "path": "/groceries/personal-care"
+  },
+  {
+    "id": 9,
+    "title": "Meat & Seafood",
+    "image": "/assets/chips.png",
+    "path": "/groceries/meat"
+  },
+  {
+    "id": 10,
+    "title": "Baby Care",
+    "image": "/assets/cleaning.png",
+    "path": "/groceries/babycare"
+  },
+  {
+    "id": 11,
+    "title": "Atta, Rice & Dal",
+    "image": "/assets/coke.png",
+    "path": "/groceries/atta-rice-dal"
+  },
+  {
+    "id": 12,
+    "title": "Oil & Ghee",
+    "image": "/assets/dairy.png",
+    "path": "/groceries/oil-ghee"
+  },
+  {
+    "id": 13,
+    "title": "Masala & Spices",
+    "image": "/assets/home.png",
+    "path": "/groceries/spices"
+  },
+  {
+    "id": 14,
+    "title": "Biscuits & Cookies",
+    "image": "/assets/masala.png",
+    "path": "/groceries/biscuits"
+  },
+  {
+    "id": 15,
+    "title": "Breakfast & Cereals",
+    "image": "/assets/meat.png",
+    "path": "/groceries/cereals"
+  },
+  {
+    "id": 16,
+    "title": "Instant Food",
+    "image": "/assets/fruits.png",
+    "path": "/groceries/instant-food"
+  },
+  {
+    "id": 17,
+    "title": "Sauces & Spreads",
+    "image": "/assets/fruits.png",
+    "path": "/groceries/sauces"
+  },
+  {
+    "id": 18,
+    "title": "Frozen Foods",
+    "image": "/assets/fruits.png",
+    "path": "/groceries/frozen-foods"
+  },
+  {
+    "id": 19,
+    "title": "Cleaning Supplies",
+    "image": "/assets/fruits.png",
+    "path": "/groceries/cleaning"
+  },
+  {
+    "id": 20,
+    "title": "Pooja Essentials",
+    "image": "/assets/fruits.png",
+    "path": "/groceries/pooja-essentials"
+  }
+]

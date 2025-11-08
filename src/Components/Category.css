@@ -1,10 +1,9 @@
 .category-container {
   display: flex;
   justify-content: center;
-  gap: 15px;   /* spacing between buttons */
+  gap: 15px;   
   flex-wrap: nowrap;
   margin-top: 10px;
-  border: 1px solid black;
 }
 
 .mind-container {
@@ -36,11 +35,16 @@
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  background-color: white;
+  background-color: transparent;
+}
+.one-item{
+  background-color: transparent;
 }
 
 .items img {
-  height: 212px;
-  width: 212px;
+  height: 175px;
+  width: 175px;
   border-radius: 8px;
 }
 

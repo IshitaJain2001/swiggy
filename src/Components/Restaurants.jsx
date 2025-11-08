@@ -4,12 +4,17 @@ import { useSelector } from "react-redux";
 import { useEffect, useRef, useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import "./Restaurants.css";
+import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Restaurants() {
   const cityname = useSelector((state) => state.city);
   const [city, setCity] = useState(localStorage.getItem("city") || "");
   const [restaurants, setRestaurants] = useState([]);
   const scrollRef = useRef(null);
+
+  const {category} = useParams()
+  console.log(category, "eiorjeoofodsjsoj")
 
   useEffect(() => {
     async function getRest() {
@@ -56,7 +61,7 @@ export default function Restaurants() {
         {filteredArea.length > 0 ? (
           <div className="restaurant-grid1" ref={scrollRef}>
             {filteredArea.map((res, index) => (
-              <div className="restaurant-card" key={index}>
+              <Link to={`/restaurants/${category}/${res.title}`} className="restaurant-card" key={index}>
                 <img src={res.image} alt={res.name} />
                 <h3>{res.title}</h3>
                 <p className="title">{res.name}</p>
@@ -64,7 +69,7 @@ export default function Restaurants() {
                   ⭐ {res.rating} | ⏱ {res.minTime}-{res.maxTime} mins
                 </p>
                 <p className="offer">{res.offer}</p>
-              </div>
+              </Link>
             ))}
           </div>
         ) : (

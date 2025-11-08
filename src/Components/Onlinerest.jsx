@@ -39,7 +39,7 @@ export default function Onlinerest({ footerRef }) {
   const loaderRef = useRef(null);
 
   useEffect(() => {
-    fetch("/restaurants.json")
+    fetch("/dineout.json")
       .then((res) => res.json())
       .then((data) => {
         const repeated = Array(10).fill(data).flat();
@@ -438,6 +438,7 @@ export default function Onlinerest({ footerRef }) {
               style={{ display: loadedImages[i] ? "block" : "none" }}
               onLoad={() => handleImageLoad(i)}
             />
+            
             <h3>{res.name}</h3>
             <p>
               ⭐ {res.rating} | ⏱ {res.minTime}min - {res.maxTime}min

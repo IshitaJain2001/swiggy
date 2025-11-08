@@ -2,9 +2,25 @@ import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
 import "./Category.css";
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
+import Restaurants from "./Restaurants";
 export default function Category() {
   const [item, setItems] = useState([]);
+  const [res, setRes] = useState([])
+
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    async function getData() {
+      let res = await fetch("/restaurants.json");
+      let data = await res.json();
+      setRes(data);
+      console.log(res, "sldfjdsfsdfsdjfsd res data")
+    }
+    getData();
+  }, []);
+
   useEffect(() => {
     async function getData() {
       let res = await fetch("/category.json");
@@ -42,9 +58,12 @@ export default function Category() {
           {item.length > 0 ? (
             item.map((food, index) => {
               return (
-                <Link key={index} to={food.path}>
-                  {" "}
-                  <img src={food.image} alt="" />{" "}
+                <Link key={index} to={`/restaurants/${food.path}`}>
+                <div className="one-item">
+                  
+                  <img src={food.image} alt="" />
+                </div>
+                  
                 </Link>
               );
             })

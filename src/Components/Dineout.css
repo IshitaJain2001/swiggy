@@ -1,0 +1,83 @@
+.dineout-page{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dineout-res-name{
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    margin-top: 2rem;
+}
+
+.dineout-filter{
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 600;
+    gap: 15px;
+    margin-top: 1rem;
+}
+.dineout-hr{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.dineout-img{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.info-container{
+    background-color: white;
+    color: black;
+    height: 100%;
+    width: 50%;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.rating-price{
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.res-name{
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.res-location{
+    font-size: 20px;
+    color: rgb(74, 74, 74);
+    
+}
+
+
+.time-for-open{
+    color: green;
+}
+
+.dineout-hr-line{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.open-now{
+    margin: 12px 0;
+    
+}
+
+.get-access{
+    display: flex;
+    margin: 10px 0;
+    width: 100%;
+    justify-content: space-around;
+    color: orangered;
+    font-weight: bold;
+}

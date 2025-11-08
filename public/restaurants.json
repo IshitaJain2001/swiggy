@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "image": "/assets/pizza-hut.avif",
     "offer": "Items at ₹179",
     "title": "Pizza Hut",
@@ -12,9 +13,53 @@
     "veg": "pure",
     "price": 200,
     "new": true,
-    "category": ["italian", "north-indian"]
+    "category": [
+      "italian",
+      "north-indian"
+    ],
+    "category_img" : "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/6/23/81a08241-7cdf-4c95-85a3-aa5093c10888_817359%20(1).jpg",
+    "offers": [
+      "pizza",
+      "shake",
+      "juice",
+      "salad",
+      "coffee"
+    ],
+    "offer_items": [
+      {
+        "name": "Italian Pizza",
+        "description": "A classic thin-crust pizza with fresh basil.",
+        "price": 250,
+        "image": "/assets/pizza.avif"
+      },
+      {
+        "name": "Chicken Tikka Pizza",
+        "description": "Fusion pizza with creamy chicken tikka.",
+        "price": 350,
+        "image": "/assets/chicken-pizza.avif"
+      },
+      {
+        "name": "Garlic Breadsticks",
+        "description": "Warm breadsticks with a hint of garlic and herbs.",
+        "price": 99,
+        "image": "/assets/garlic-bread.avif"
+      },
+      {
+        "name": "Chocolate Shake",
+        "description": "Rich and creamy chocolate shake.",
+        "price": 120,
+        "image": "/assets/chocolate-shake.avif"
+      },
+      {
+        "name": "Fresh Orange Juice",
+        "description": "100% fresh squeezed orange juice.",
+        "price": 100,
+        "image": "/assets/orange-juice.avif"
+      }
+    ]
   },
   {
+    "id": "2",
     "image": "/assets/burgerking.avif",
     "offer": "Items at ₹29",
     "title": "Burger King",
@@ -27,9 +72,50 @@
     "veg": "no",
     "price": 250,
     "new": false,
-    "category": ["punjabi", "indian"]
+    "category": [
+      "punjabi",
+      "indian"
+    ],
+    "offers": [
+      "paratha",
+      "shake",
+      "kachori"
+    ],
+    "offer_items": [
+      {
+        "name": "Veg Whopper",
+        "description": "Flame-grilled patty with fresh vegetables.",
+        "price": 180,
+        "image": "/assets/veg-whopper.avif"
+      },
+      {
+        "name": "Chicken Fries",
+        "description": "Crispy chicken strips, a perfect snack.",
+        "price": 140,
+        "image": "/assets/chicken-fries.avif"
+      },
+      {
+        "name": "Chocolate Shake",
+        "description": "Rich and creamy chocolate shake.",
+        "price": 100,
+        "image": "/assets/chocolate-shake.avif"
+      },
+      {
+        "name": "Aloo Tikki Burger",
+        "description": "A classic burger with a spicy potato patty.",
+        "price": 79,
+        "image": "/assets/aloo-tikki-burger.avif"
+      },
+      {
+        "name": "Pyaaz Kachori",
+        "description": "Crispy pastry with a spicy onion filling.",
+        "price": 60,
+        "image": "/assets/kachori.avif"
+      }
+    ]
   },
   {
+    "id": "3",
     "image": "/assets/dominos.avif",
     "offer": "Items at ₹75",
     "title": "Domino's Pizza",
@@ -42,9 +128,53 @@
     "veg": "pure",
     "price": 500,
     "new": true,
-    "category": ["italian", "bengali", "andhra"]
+    "category": [
+      "italian",
+      "bengali",
+      "andhra"
+    ],
+    "offers": [
+      "pizza",
+      "cake",
+      "shake",
+      "biryani",
+      "juice"
+    ],
+    "offer_items": [
+      {
+        "name": "Farmhouse Pizza",
+        "description": "Onions, capsicums, tomatoes and mushrooms.",
+        "price": 350,
+        "image": "/assets/farmhouse-pizza.avif"
+      },
+      {
+        "name": "Tiramisu Cake",
+        "description": "Classic Italian layered tiramisu cake.",
+        "price": 180,
+        "image": "/assets/tiramisu-cake.avif"
+      },
+      {
+        "name": "Choco Lava Cake",
+        "description": "Molten chocolate cake, a perfect dessert.",
+        "price": 99,
+        "image": "/assets/lava-cake.avif"
+      },
+      {
+        "name": "Belgian Choco Shake",
+        "description": "Indulge in the rich taste of Belgian chocolate.",
+        "price": 150,
+        "image": "/assets/belgian-shake.avif"
+      },
+      {
+        "name": "Veg Biryani",
+        "description": "Fragrant basmati rice with assorted vegetables.",
+        "price": 280,
+        "image": "/assets/veg-biryani.avif"
+      }
+    ]
   },
   {
+    "id": "4",
     "image": "/assets/macdonalds.avif",
     "offer": "Items at ₹49",
     "title": "McDonald's",
@@ -57,9 +187,50 @@
     "veg": "no",
     "price": 400,
     "new": false,
-    "category": ["korean", "seafood"]
+    "category": [
+      "korean",
+      "seafood"
+    ],
+    "offers": [
+      "burger",
+      "juice",
+      "shake"
+    ],
+    "offer_items": [
+      {
+        "name": "McAloo Tikki Burger",
+        "description": "A classic Indian-style burger with a potato and peas patty.",
+        "price": 99,
+        "image": "/assets/mcaloo-tikki.avif"
+      },
+      {
+        "name": "French Fries",
+        "description": "Crispy and salted golden fries.",
+        "price": 89,
+        "image": "/assets/fries.avif"
+      },
+      {
+        "name": "Mango Shake",
+        "description": "A sweet and fruity shake made with ripe mangoes.",
+        "price": 120,
+        "image": "/assets/mango-shake.avif"
+      },
+      {
+        "name": "Coca-Cola",
+        "description": "A chilled, classic soft drink.",
+        "price": 60,
+        "image": "/assets/coke.avif"
+      },
+      {
+        "name": "Corn & Cheese Burger",
+        "description": "A delicious burger with a corn and cheese patty.",
+        "price": 150,
+        "image": "/assets/corn-cheese-burger.avif"
+      }
+    ]
   },
   {
+    "id": "5",
     "image": "/assets/faasos.avif",
     "offer": "Items at ₹89",
     "title": "Faasos- Wraps, Rolls &...",
@@ -72,9 +243,54 @@
     "veg": "no",
     "price": 200,
     "new": true,
-    "category": ["chinese", "kerala", "north-indian"]
+    "category": [
+      "chinese",
+      "kerala",
+      "north-indian"
+    ],
+    "category_img" : "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/8/24/392c53f7-f35d-4a5a-92d5-44cf947cc5ea_44033.jpg",
+    "offers": [
+      "paratha",
+      "dosa",
+      "biryani",
+      "juice",
+      "shake"
+    ],
+    "offer_items": [
+      {
+        "name": "Chicken Biryani",
+        "description": "Juicy chicken with fragrant rice.",
+        "price": 280,
+        "image": "/assets/chicken-biryani.avif"
+      },
+      {
+        "name": "Hyderabadi Biryani",
+        "description": "Aromatic and spicy biryani from Hyderabad.",
+        "price": 320,
+        "image": "/assets/hyderabadi-biryani.avif"
+      },
+      {
+        "name": "Paneer Biryani",
+        "description": "Soft paneer cubes in a flavorful rice.",
+        "price": 250,
+        "image": "/assets/paneer-biryani.avif"
+      },
+      {
+        "name": "Veg Biryani",
+        "description": "Fragrant basmati rice with assorted vegetables.",
+        "price": 280,
+        "image": "/assets/veg-biryani.avif"
+      },
+      {
+        "name": "Lemon Juice",
+        "description": "Refreshing lemon juice to cool you down.",
+        "price": 80,
+        "image": "/assets/lemon-juice.avif"
+      }
+    ]
   },
   {
+    "id": "6",
     "image": "/assets/kfc.avif",
     "offer": "Items at ₹59",
     "title": "KFC",
@@ -87,9 +303,51 @@
     "veg": "pure",
     "price": 600,
     "new": false,
-    "category": ["bengali", "indian", "kerala"]
+    "category": [
+      "bengali",
+      "indian",
+      "kerala"
+    ],
+    "offers": [
+      "kachori",
+      "samosa",
+      "tea"
+    ],
+    "offer_items": [
+      {
+        "name": "Chicken Popcorn",
+        "description": "Bite-sized pieces of crispy, fried chicken.",
+        "price": 149,
+        "image": "/assets/chicken-popcorn.avif"
+      },
+      {
+        "name": "Zinger Burger",
+        "description": "A classic KFC burger with a crispy chicken fillet.",
+        "price": 200,
+        "image": "/assets/zinger-burger.avif"
+      },
+      {
+        "name": "Hot & Crispy Chicken",
+        "description": "Signature crispy chicken pieces.",
+        "price": 250,
+        "image": "/assets/hot-crispy-chicken.avif"
+      },
+      {
+        "name": "Potato Samosa",
+        "description": "A savory pastry filled with spicy potatoes.",
+        "price": 50,
+        "image": "/assets/samosa.avif"
+      },
+      {
+        "name": "Masala Tea",
+        "description": "Spiced Indian tea, a perfect match for fried snacks.",
+        "price": 70,
+        "image": "/assets/masala-tea.avif"
+      }
+    ]
   },
   {
+    "id": "7",
     "image": "/assets/pizza-hut.avif",
     "offer": "Items at ₹179",
     "title": "Bikaner",
@@ -102,6 +360,1397 @@
     "veg": "pure",
     "price": 289,
     "new": true,
-    "category": ["korean", "indian", "kerala"]
+    "category": [
+      "korean",
+      "indian",
+      "kerala"
+    ],
+    "offers": [
+      "dosa",
+      "idli",
+      "poha",
+      "upma",
+      "khichdi"
+    ],
+    "offer_items": [
+      {
+        "name": "Masala Dosa",
+        "description": "Crispy crepe with spiced potato filling.",
+        "price": 120,
+        "image": "/assets/dosa.avif"
+      },
+      {
+        "name": "Plain Idli",
+        "description": "Soft and fluffy steamed rice cakes.",
+        "price": 80,
+        "image": "/assets/idli.avif"
+      },
+      {
+        "name": "Poha",
+        "description": "Flattended rice with peanuts and spices.",
+        "price": 70,
+        "image": "/assets/poha.avif"
+      },
+      {
+        "name": "Upma",
+        "description": "A savory, thick porridge from semolina.",
+        "price": 60,
+        "image": "/assets/upma.avif"
+      },
+      {
+        "name": "Dal Khichdi",
+        "description": "Light, wholesome mix of rice and lentils.",
+        "price": 150,
+        "image": "/assets/khichdi.avif"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "image": "/assets/the-biryani-house.avif",
+    "offer": "Items at ₹249",
+    "title": "The Biryani House",
+    "rating": 4.5,
+    "minTime": 25,
+    "maxTime": 35,
+    "name": "Biryani, North Indian",
+    "place": "Lajpat Nagar",
+    "state": "Delhi",
+    "veg": "pure",
+    "price": 450,
+    "new": true,
+    "category": [
+      "biryani",
+      "north-indian",
+      "indian"
+    ],
+    "category_img" : "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/6/19/993813cc-f53a-4f5c-9a58-fd8a35365733_1072666.jpg",
+    "offers": [
+      "biryani",
+      "kebab",
+      "salad",
+      "shake",
+      "juice"
+    ],
+    "offer_items": [
+      {
+        "name": "Chicken Biryani",
+        "description": "Juicy chicken with fragrant rice.",
+        "price": 280,
+        "image": "/assets/chicken-biryani.avif"
+      },
+      {
+        "name": "Hyderabadi Biryani",
+        "description": "Aromatic and spicy biryani from Hyderabad.",
+        "price": 320,
+        "image": "/assets/hyderabadi-biryani.avif"
+      },
+      {
+        "name": "Paneer Biryani",
+        "description": "Soft paneer cubes in a flavorful rice.",
+        "price": 250,
+        "image": "/assets/paneer-biryani.avif"
+      },
+      {
+        "name": "Veg Biryani",
+        "description": "Fragrant basmati rice with assorted vegetables.",
+        "price": 280,
+        "image": "/assets/veg-biryani.avif"
+      },
+      {
+        "name": "Mutton Biryani",
+        "description": "Tender mutton pieces with aromatic spices.",
+        "price": 380,
+        "image": "/assets/mutton-biryani.avif"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "image": "/assets/dosa-corner.avif",
+    "offer": "Items at ₹99",
+    "title": "Dosa Corner",
+    "rating": 4.0,
+    "minTime": 15,
+    "maxTime": 20,
+    "name": "South Indian, Snacks",
+    "place": "Gurugram",
+    "state": "Haryana",
+    "veg": "pure",
+    "price": 200,
+    "new": true,
+    "category": [
+      "south-indian",
+      "snacks",
+      "indian"
+    ],
+    "offers": [
+      "dosa",
+      "idli",
+      "poha",
+      "upma",
+      "khichdi"
+    ],
+    "offer_items": [
+      {
+        "name": "Masala Dosa",
+        "description": "Crispy crepe with spiced potato filling.",
+        "price": 120,
+        "image": "/assets/dosa.avif"
+      },
+      {
+        "name": "Plain Idli",
+        "description": "Soft and fluffy steamed rice cakes.",
+        "price": 80,
+        "image": "/assets/idli.avif"
+      },
+      {
+        "name": "Poha",
+        "description": "Flattended rice with peanuts and spices.",
+        "price": 70,
+        "image": "/assets/poha.avif"
+      },
+      {
+        "name": "Upma",
+        "description": "A savory, thick porridge from semolina.",
+        "price": 60,
+        "image": "/assets/upma.avif"
+      },
+      {
+        "name": "Dal Khichdi",
+        "description": "Light, wholesome mix of rice and lentils.",
+        "price": 150,
+        "image": "/assets/khichdi.avif"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "image": "/assets/paratha-express.avif",
+    "offer": "Items at ₹69",
+    "title": "Paratha Express",
+    "rating": 3.8,
+    "minTime": 20,
+    "maxTime": 25,
+    "name": "North Indian, Indian",
+    "place": "Rohini",
+    "state": "Delhi",
+    "veg": "pure",
+    "price": 300,
+    "new": true,
+    "category": [
+      "north-indian",
+      "indian"
+    ],
+    "category_img" : "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/mvjqcsegyckbe1asuyck",
+    "offers": [
+      "paratha",
+      "tea",
+      "shake",
+      "juice",
+      "biryani"
+    ],
+    "offer_items": [
+      {
+        "name": "Aloo Paratha",
+        "description": "Traditional paratha stuffed with potato.",
+        "price": 100,
+        "image": "/assets/aloo-paratha.avif"
+      },
+      {
+        "name": "Gobi Paratha",
+        "description": "Paratha filled with spiced cauliflower.",
+        "price": 110,
+        "image": "/assets/gobi-paratha.avif"
+      },
+      {
+        "name": "Paneer Paratha",
+        "description": "Delicious paratha stuffed with cottage cheese.",
+        "price": 130,
+        "image": "/assets/paneer-paratha.avif"
+      },
+      {
+        "name": "Onion Paratha",
+        "description": "Paratha with a flavorful onion filling.",
+        "price": 100,
+        "image": "/assets/onion-paratha.avif"
+      },
+      {
+        "name": "Veg Biryani",
+        "description": "Aromatic rice cooked with assorted vegetables.",
+        "price": 250,
+        "image": "/assets/veg-biryani.avif"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "image": "/assets/chole-bhature-junction.avif",
+    "offer": "Items at ₹129",
+    "title": "Chole Bhature Junction",
+    "rating": 4.1,
+    "minTime": 15,
+    "maxTime": 20,
+    "name": "North Indian, Street Food",
+    "place": "Noida",
+    "state": "Uttar Pradesh",
+    "veg": "pure",
+    "price": 200,
+    "new": true,
+    "category": [
+      "north-indian",
+      "street-food"
+    ],
+    "category_img" : "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/8/19/151d3e13-c4fa-4bd3-a76c-589f5bdb12f5_443497.JPG",
+    "offers": [
+      "chole bhature",
+      "poori",
+      "kebab",
+      "salad",
+      "shake"
+    ],
+    "offer_items": [
+      {
+        "name": "Chole Bhature",
+        "description": "Spicy chickpea curry served with fried bread.",
+        "price": 150,
+        "image": "/assets/chole-bhature.avif"
+      },
+      {
+        "name": "Poori Sabzi",
+        "description": "Puffed bread served with a flavorful potato curry.",
+        "price": 120,
+        "image": "/assets/poori-sabzi.avif"
+      },
+      {
+        "name": "Veg Seekh Kebab",
+        "description": "Spiced vegetable kebabs cooked on a skewer.",
+        "price": 180,
+        "image": "/assets/veg-kebab.avif"
+      },
+      {
+        "name": "Kachumber Salad",
+        "description": "Fresh salad with cucumber, tomato, and onion.",
+        "price": 80,
+        "image": "/assets/kachumber-salad.avif"
+      },
+      {
+        "name": "Lassi",
+        "description": "A sweet, creamy, yogurt-based drink.",
+        "price": 100,
+        "image": "/assets/lassi.avif"
+      }
+    ]
+  },
+ {
+    "id": "12",
+    "image": "/assets/samosa-street.avif",
+    "offer": "Items at ₹49",
+    "title": "Samosa Street",
+    "rating": 3.9,
+    "minTime": 10,
+    "maxTime": 15,
+    "name": "Snacks, Street Food",
+    "place": "Lajpat Nagar",
+    "state": "Delhi",
+    "veg": "pure",
+    "price": 150,
+    "new": true,
+    "category": [
+      "snacks",
+      "street-food"
+    ],
+    "offers": [
+      "somasa",
+      "kachori",
+      "chai",
+      "coffee",
+      "upma"
+    ],
+    "offer_items": [
+      {
+        "name": "Potato Samosa",
+        "description": "Crispy fried pastry with a spiced potato filling.",
+        "price": 40,
+        "image": "/assets/samosa.avif"
+      },
+      {
+        "name": "Pyaaz Kachori",
+        "description": "Crispy pastry with a spicy onion filling.",
+        "price": 50,
+        "image": "/assets/kachori.avif"
+      },
+      {
+        "name": "Masala Chai",
+        "description": "Hot and aromatic tea brewed with spices.",
+        "price": 30,
+        "image": "/assets/masala-chai.avif"
+      },
+      {
+        "name": "Hot Coffee",
+        "description": "A classic cup of freshly brewed hot coffee.",
+        "price": 60,
+        "image": "/assets/hot-coffee.avif"
+      },
+      {
+        "name": "Vegetable Upma",
+        "description": "A savory, thick porridge with fresh vegetables.",
+        "price": 80,
+        "image": "/assets/upma.avif"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "image": "/assets/the-healthy-bowl.avif",
+    "offer": "Items at ₹199",
+    "title": "The Healthy Bowl",
+    "rating": 4.7,
+    "minTime": 30,
+    "maxTime": 40,
+    "name": "Healthy Food, Salads",
+    "place": "Gurugram",
+    "state": "Haryana",
+    "veg": "pure",
+    "price": 400,
+    "new": false,
+    "category": [
+      "healthy",
+      "salads",
+      "korean"
+    ],
+    "offers": [
+      "salad",
+      "juice",
+      "khichdi",
+      "biryani",
+      "poha"
+    ],
+    "offer_items": [
+      {
+        "name": "Greek Salad",
+        "description": "Fresh lettuce, olives, feta cheese and vinaigrette.",
+        "price": 200,
+        "image": "/assets/greek-salad.avif"
+      },
+      {
+        "name": "Paneer Tikka Salad",
+        "description": "Grilled paneer cubes on a bed of greens.",
+        "price": 250,
+        "image": "/assets/paneer-tikka-salad.avif"
+      },
+      {
+        "name": "Pomegranate Juice",
+        "description": "Refreshing juice from fresh pomegranates.",
+        "price": 150,
+        "image": "/assets/pomegranate-juice.avif"
+      },
+      {
+        "name": "Khichdi with Curd",
+        "description": "Nutritious mix of lentils and rice with curd.",
+        "price": 180,
+        "image": "/assets/khichdi.avif"
+      },
+      {
+        "name": "Poha Bowl",
+        "description": "A light and healthy bowl of flattened rice.",
+        "price": 100,
+        "image": "/assets/poha.avif"
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "image": "/assets/the-coffee-shop.avif",
+    "offer": "Items at ₹59",
+    "title": "The Coffee Shop",
+    "rating": 4.3,
+    "minTime": 10,
+    "maxTime": 15,
+    "name": "Beverages, Desserts, Snacks",
+    "place": "Cannuaght Place",
+    "state": "Delhi",
+    "veg": "no",
+    "price": 200,
+    "new": false,
+    "category": [
+      "beverages",
+      "desserts",
+      "snacks"
+    ],
+    "offers": [
+      "coffee",
+      "tea",
+      "cake",
+      "shake",
+      "samosa"
+    ],
+    "offer_items": [
+      {
+        "name": "Espresso Coffee",
+        "description": "A strong, concentrated coffee shot.",
+        "price": 120,
+        "image": "/assets/espresso.avif"
+      },
+      {
+        "name": "Green Tea",
+        "description": "A soothing and healthy cup of green tea.",
+        "price": 80,
+        "image": "/assets/green-tea.avif"
+      },
+      {
+        "name": "Red Velvet Cake",
+        "description": "Moist red velvet cake with cream cheese frosting.",
+        "price": 150,
+        "image": "/assets/red-velvet-cake.avif"
+      },
+      {
+        "name": "Oreo Shake",
+        "description": "Classic shake with crushed Oreo cookies.",
+        "price": 180,
+        "image": "/assets/oreo-shake.avif"
+      },
+      {
+        "name": "Potato Samosa",
+        "description": "Fried pastry with a savory potato filling.",
+        "price": 40,
+        "image": "/assets/samosa.avif"
+      }
+    ]
+  },
+    {
+    "id": "15",
+    "image": "/assets/pav-bhaji-point.avif",
+    "offer": "Items at ₹149",
+    "title": "Pav Bhaji Point",
+    "rating": 3.6,
+    "minTime": 20,
+    "maxTime": 25,
+    "name": "Street Food, Indian",
+    "place": "Mumbai",
+    "state": "Maharashtra",
+    "veg": "pure",
+    "price": 250,
+    "new": true,
+    "category": [
+      "street-food",
+      "indian"
+    ],
+    "offers": [
+      "pav bhaji",
+      "tea",
+      "juice",
+      "shake",
+      "kachori"
+    ],
+    "offer_items": [
+      {
+        "name": "Pav Bhaji",
+        "description": "Spicy mixed vegetable curry served with soft bread rolls.",
+        "price": 150,
+        "image": "/assets/pav-bhaji.avif"
+      },
+      {
+        "name": "Masala Tea",
+        "description": "A strong, aromatic tea with Indian spices.",
+        "price": 40,
+        "image": "/assets/masala-tea.avif"
+      },
+      {
+        "name": "Fresh Lime Juice",
+        "description": "A simple and refreshing lemonade.",
+        "price": 60,
+        "image": "/assets/lime-juice.avif"
+      },
+      {
+        "name": "Mango Shake",
+        "description": "A thick, sweet shake made from ripe mangoes.",
+        "price": 120,
+        "image": "/assets/mango-shake.avif"
+      },
+      {
+        "name": "Matar Kachori",
+        "description": "A fried pastry filled with spiced green peas.",
+        "price": 50,
+        "image": "/assets/kachori.avif"
+      }
+    ]
+  },
+
+  {
+    "id": "16",
+    "image": "/assets/breakfast-club.avif",
+    "offer": "Items at ₹99",
+    "title": "The Breakfast Club",
+    "rating": 4.4,
+    "minTime": 20,
+    "maxTime": 25,
+    "name": "Breakfast, Omelettes, Sandwiches",
+    "place": "Delhi Cantt",
+    "state": "Delhi",
+    "veg": "no",
+    "price": 300,
+    "new": true,
+    "category": [
+      "breakfast",
+      "korean",
+      "seafood"
+    ],
+    "offers": [
+      "omelete",
+      "poha",
+      "coffee",
+      "juice",
+      "sandwich"
+    ],
+    "offer_items": [
+      {
+        "name": "Masala Omelette",
+        "description": "Fluffy omelette with spicy Indian masala.",
+        "price": 120,
+        "image": "/assets/masala-omelette.avif"
+      },
+      {
+        "name": "Poha with Sev",
+        "description": "Classic poha topped with crunchy sev.",
+        "price": 80,
+        "image": "/assets/poha.avif"
+      },
+      {
+        "name": "Hot Filter Coffee",
+        "description": "A strong, traditional South Indian filter coffee.",
+        "price": 100,
+        "image": "/assets/filter-coffee.avif"
+      },
+      {
+        "name": "Fresh Orange Juice",
+        "description": "Fresh squeezed orange juice, no added sugar.",
+        "price": 150,
+        "image": "/assets/orange-juice.avif"
+      },
+      {
+        "name": "Veg Grilled Sandwich",
+        "description": "Grilled sandwich with a mix of veggies.",
+        "price": 120,
+        "image": "/assets/veg-sandwich.avif"
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "image": "/assets/chole-bhature-junction.avif",
+    "offer": "Items at ₹129",
+    "title": "Mithai Junction",
+    "rating": 4.1,
+    "minTime": 15,
+    "maxTime": 20,
+    "name": "Sweets, Snacks",
+    "place": "Noida",
+    "state": "Uttar Pradesh",
+    "veg": "pure",
+    "price": 200,
+    "new": true,
+    "category": [
+      "indian",
+      "snacks",
+      "sweets"
+    ],
+    "offers": [
+      "dhokla",
+      "kachori",
+      "somasa",
+      "juice",
+      "tea"
+    ],
+    "offer_items": [
+      {
+        "name": "Dhokla",
+        "description": "Soft and spongy steamed snack with a sweet & sour taste.",
+        "price": 60,
+        "image": "/assets/dhokla.avif"
+      },
+      {
+        "name": "Kachori",
+        "description": "Deep-fried pastry filled with spiced lentils.",
+        "price": 50,
+        "image": "/assets/kachori.avif"
+      },
+      {
+        "name": "Aloo Samosa",
+        "description": "Crispy samosa with a spicy potato filling.",
+        "price": 40,
+        "image": "/assets/samosa.avif"
+      },
+      {
+        "name": "Mint Juice",
+        "description": "Refreshing juice with a hint of mint.",
+        "price": 80,
+        "image": "/assets/mint-juice.avif"
+      },
+      {
+        "name": "Masala Tea",
+        "description": "Aromatic tea with Indian spices.",
+        "price": 50,
+        "image": "/assets/masala-tea.avif"
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "image": "/assets/all-india-cafe.avif",
+    "offer": "Items at ₹199",
+    "title": "All India Cafe",
+    "rating": 4.2,
+    "minTime": 30,
+    "maxTime": 40,
+    "name": "Indian, Multi-Cuisine",
+    "place": "Mumbai",
+    "state": "Maharashtra",
+    "veg": "no",
+    "price": 500,
+    "new": true,
+    "category": [
+      "indian",
+      "multi-cuisine"
+    ],
+    "offers": [
+      "biryani",
+      "kachori",
+      "paratha",
+      "dosa",
+      "dhokla"
+    ],
+    "offer_items": [
+      {
+        "name": "Chicken Biryani",
+        "description": "A complete meal in itself, perfect for a feast.",
+        "price": 300,
+        "image": "/assets/chicken-biryani.avif"
+      },
+      {
+        "name": "Dal Kachori",
+        "description": "A crispy snack perfect with spicy chutney.",
+        "price": 70,
+        "image": "/assets/kachori.avif"
+      },
+      {
+        "name": "Aloo Paratha",
+        "description": "Indian flatbread stuffed with spiced potatoes.",
+        "price": 100,
+        "image": "/assets/aloo-paratha.avif"
+      },
+      {
+        "name": "Plain Dosa",
+        "description": "Thin, crispy crepe served with sambar and chutney.",
+        "price": 110,
+        "image": "/assets/dosa.avif"
+      },
+      {
+        "name": "Khaman Dhokla",
+        "description": "A soft, spongy, and savory vegetarian dish from Gujarat.",
+        "price": 80,
+        "image": "/assets/dhokla.avif"
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "image": "/assets/the-noodle-house.avif",
+    "offer": "Items at ₹299",
+    "title": "The Noodle House",
+    "rating": 3.7,
+    "minTime": 20,
+    "maxTime": 25,
+    "name": "Chinese, Thai",
+    "place": "Gurugram",
+    "state": "Haryana",
+    "veg": "no",
+    "price": 400,
+    "new": true,
+    "category": [
+      "chinese",
+      "thai"
+    ],
+    "offers": [
+      "tea",
+      "juice",
+      "shake",
+      "biryani",
+      "noodles"
+    ],
+    "offer_items": [
+      {
+        "name": "Thai Iced Tea",
+        "description": "A sweet and refreshing tea with condensed milk.",
+        "price": 120,
+        "image": "/assets/thai-iced-tea.avif"
+      },
+      {
+        "name": "Fresh Lime Juice",
+        "description": "A classic refreshing beverage.",
+        "price": 90,
+        "image": "/assets/lime-juice.avif"
+      },
+      {
+        "name": "Mango Shake",
+        "description": "A sweet and fruity shake made with ripe mangoes.",
+        "price": 150,
+        "image": "/assets/mango-shake.avif"
+      },
+      {
+        "name": "Chicken Biryani",
+        "description": "Aromatic rice with perfectly spiced chicken.",
+        "price": 280,
+        "image": "/assets/chicken-biryani.avif"
+      },
+      {
+        "name": "Hakka Noodles",
+        "description": "Wok-tossed noodles with a mix of vegetables.",
+        "price": 200,
+        "image": "/assets/hakka-noodles.avif"
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "image": "/assets/cafe-coffee-day.avif",
+    "offer": "Items at ₹149",
+    "title": "Cafe Coffee Day",
+    "rating": 4.0,
+    "minTime": 10,
+    "maxTime": 15,
+    "name": "Coffee, Snacks, Desserts",
+    "place": "Cannuaght Place",
+    "state": "Delhi",
+    "veg": "pure",
+    "price": 150,
+    "new": true,
+    "category": [
+      "beverages",
+      "snacks",
+      "desserts"
+    ],
+    "offers": [
+      "coffee",
+      "shake",
+      "cake",
+      "salad",
+      "sandwich"
+    ],
+    "offer_items": [
+      {
+        "name": "Espresso Coffee",
+        "description": "A strong, concentrated coffee shot.",
+        "price": 120,
+        "image": "/assets/espresso.avif"
+      },
+      {
+        "name": "Green Tea",
+        "description": "A soothing and healthy cup of green tea.",
+        "price": 80,
+        "image": "/assets/green-tea.avif"
+      },
+      {
+        "name": "Red Velvet Cake",
+        "description": "Moist red velvet cake with cream cheese frosting.",
+        "price": 150,
+        "image": "/assets/red-velvet-cake.avif"
+      },
+      {
+        "name": "Oreo Shake",
+        "description": "Classic shake with crushed Oreo cookies.",
+        "price": 180,
+        "image": "/assets/oreo-shake.avif"
+      },
+      {
+        "name": "Potato Samosa",
+        "description": "Fried pastry with a savory potato filling.",
+        "price": 40,
+        "image": "/assets/samosa.avif"
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "image": "/assets/poori-sabzi.avif",
+    "offer": "Items at ₹89",
+    "title": "Poori Sabzi Point",
+    "rating": 4.1,
+    "minTime": 15,
+    "maxTime": 20,
+    "name": "Indian, Breakfast",
+    "place": "Karol Bagh",
+    "state": "Delhi",
+    "veg": "pure",
+    "price": 150,
+    "new": true,
+    "category": [
+      "indian",
+      "breakfast",
+      "street-food"
+    ],
+    "offers": [
+      "poori",
+      "kachori",
+      "somasa",
+      "tea",
+      "dhokla"
+    ],
+    "offer_items": [
+      {
+        "name": "Poori Sabzi Plate",
+        "description": "Deep-fried puffed bread served with spicy potato curry.",
+        "price": 100,
+        "image": "/assets/poori-sabzi.avif"
+      },
+      {
+        "name": "Dal Kachori",
+        "description": "A crispy snack perfect with spicy chutney.",
+        "price": 60,
+        "image": "/assets/kachori.avif"
+      },
+      {
+        "name": "Aloo Samosa",
+        "description": "Crispy samosa with a spicy potato filling.",
+        "price": 40,
+        "image": "/assets/samosa.avif"
+      },
+      {
+        "name": "Ginger Tea",
+        "description": "Hot tea with a refreshing hint of ginger.",
+        "price": 30,
+        "image": "/assets/tea.avif"
+      },
+      {
+        "name": "Khaman Dhokla",
+        "description": "Soft and spongy savory cake.",
+        "price": 70,
+        "image": "/assets/dhokla.avif"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "image": "/assets/juice-bar.avif",
+    "offer": "Items at ₹119",
+    "title": "The Juice Bar",
+    "rating": 4.5,
+    "minTime": 10,
+    "maxTime": 15,
+    "name": "Healthy, Beverages",
+    "place": "Vasant Kunj",
+    "state": "Delhi",
+    "veg": "pure",
+    "price": 200,
+    "new": true,
+    "category": [
+      "healthy",
+      "beverages"
+    ],
+    "offers": [
+      "juice",
+      "shake",
+      "salad",
+      "sandwich",
+      "poha"
+    ],
+    "offer_items": [
+      {
+        "name": "Watermelon Juice",
+        "description": "Freshly squeezed juice with no added sugar.",
+        "price": 100,
+        "image": "/assets/watermelon-juice.avif"
+      },
+      {
+        "name": "Strawberry Shake",
+        "description": "Creamy shake with fresh strawberries.",
+        "price": 180,
+        "image": "/assets/strawberry-shake.avif"
+      },
+      {
+        "name": "Quinoa Salad",
+        "description": "Healthy salad bowl with quinoa and mixed veggies.",
+        "price": 220,
+        "image": "/assets/quinoa-salad.avif"
+      },
+      {
+        "name": "Veg Grilled Sandwich",
+        "description": "A classic grilled sandwich with mint chutney.",
+        "price": 150,
+        "image": "/assets/veg-sandwich.avif"
+      },
+      {
+        "name": "Poha with Peanuts",
+        "description": "Light breakfast made from flattened rice.",
+        "price": 90,
+        "image": "/assets/poha.avif"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "image": "/assets/dhaba.avif",
+    "offer": "Items at ₹249",
+    "title": "The Great Dhaba",
+    "rating": 4.3,
+    "minTime": 25,
+    "maxTime": 35,
+    "name": "North Indian, Punjabi",
+    "place": "Rajouri Garden",
+    "state": "Delhi",
+    "veg": "no",
+    "price": 350,
+    "new": true,
+    "category": [
+      "punjabi",
+      "north-indian"
+    ],
+    "category_img" : "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/uldkywmrlh56am6lrtpt",
+    "offers": [
+      "chole bhature",
+      "paratha",
+      "tea",
+      "biryani",
+      "lassi"
+    ],
+    "offer_items": [
+      {
+        "name": "Chole Bhature",
+        "description": "Spicy chickpea curry with soft fried bread.",
+        "price": 180,
+        "image": "/assets/chole-bhature.avif"
+      },
+      {
+        "name": "Paneer Paratha",
+        "description": "Indian flatbread stuffed with spiced cottage cheese.",
+        "price": 150,
+        "image": "/assets/paneer-paratha.avif"
+      },
+      {
+        "name": "Masala Tea",
+        "description": "Aromatic tea with a blend of spices.",
+        "price": 50,
+        "image": "/assets/masala-tea.avif"
+      },
+      {
+        "name": "Mutton Biryani",
+        "description": "Slow-cooked mutton with fragrant basmati rice.",
+        "price": 400,
+        "image": "/assets/mutton-biryani.avif"
+      },
+      {
+        "name": "Sweet Lassi",
+        "description": "A traditional yogurt-based drink, sweet and creamy.",
+        "price": 90,
+        "image": "/assets/lassi.avif"
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "image": "/assets/samosa-king.avif",
+    "offer": "Items at ₹49",
+    "title": "Samosa King",
+    "rating": 3.9,
+    "minTime": 10,
+    "maxTime": 15,
+    "name": "Snacks, Street Food",
+    "place": "Chandni Chowk",
+    "state": "Delhi",
+    "veg": "pure",
+    "price": 100,
+    "new": true,
+    "category": [
+      "snacks",
+      "street-food"
+    ],
+    "offers": [
+      "somasa",
+      "kachori",
+      "dhokla",
+      "tea",
+      "shake"
+    ],
+    "offer_items": [
+      {
+        "name": "Samosa",
+        "description": "Crispy fried pastry with a spiced potato filling.",
+        "price": 40,
+        "image": "/assets/samosa.avif"
+      },
+      {
+        "name": "Pyaaz Kachori",
+        "description": "Crispy pastry with a spicy onion filling.",
+        "price": 50,
+        "image": "/assets/kachori.avif"
+      },
+      {
+        "name": "Dhokla",
+        "description": "Soft and spongy steamed snack, a Gujarati specialty.",
+        "price": 70,
+        "image": "/assets/dhokla.avif"
+      },
+      {
+        "name": "Masala Tea",
+        "description": "Aromatic and spiced tea, perfect with snacks.",
+        "price": 30,
+        "image": "/assets/masala-tea.avif"
+      },
+      {
+        "name": "Badam Shake",
+        "description": "Rich almond shake, a filling beverage.",
+        "price": 120,
+        "image": "/assets/badam-shake.avif"
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "image": "/assets/idli-house.avif",
+    "offer": "Items at ₹79",
+    "title": "Idli House",
+    "rating": 4.6,
+    "minTime": 15,
+    "maxTime": 20,
+    "name": "South Indian, Breakfast",
+    "place": "Pitampura",
+    "state": "Delhi",
+    "veg": "pure",
+    "price": 200,
+    "new": true,
+    "category": [
+      "south-indian",
+      "breakfast"
+    ],
+    "offers": [
+      "idli",
+      "dosa",
+      "upma",
+      "khichdi",
+      "coffee"
+    ],
+    "offer_items": [
+      {
+        "name": "Steamed Idli",
+        "description": "Soft and fluffy rice cakes served with sambar and chutney.",
+        "price": 80,
+        "image": "/assets/idli.avif"
+      },
+      {
+        "name": "Rawa Dosa",
+        "description": "Crispy, lacy dosa made from semolina batter.",
+        "price": 130,
+        "image": "/assets/dosa.avif"
+      },
+      {
+        "name": "Tomato Upma",
+        "description": "Savory porridge with a tangy tomato twist.",
+        "price": 90,
+        "image": "/assets/upma.avif"
+      },
+      {
+        "name": "Curd Rice",
+        "description": "A soothing and comforting dish of rice and curd.",
+        "price": 150,
+        "image": "/assets/curd-rice.avif"
+      },
+      {
+        "name": "South Indian Filter Coffee",
+        "description": "A strong, aromatic coffee brewed in a traditional filter.",
+        "price": 70,
+        "image": "/assets/filter-coffee.avif"
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "image": "/assets/kebab-co.avif",
+    "offer": "Items at ₹349",
+    "title": "The Kebab Co.",
+    "rating": 4.8,
+    "minTime": 30,
+    "maxTime": 45,
+    "name": "Mughlai, North Indian",
+    "place": "Saket",
+    "state": "Delhi",
+    "veg": "no",
+    "price": 600,
+    "new": true,
+    "category": [
+      "mughlai",
+      "north-indian",
+      "kebab"
+    ],
+    "category_img" : "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/10/16/a01e18fe-fb09-4548-af10-f9adadfff0ee_62965.jpg",
+    "offers": [
+      "biryani",
+      "kebab",
+      "naan",
+      "juice",
+      "salad"
+    ],
+    "offer_items": [
+      {
+        "name": "Galouti Kebab",
+        "description": "Melt-in-your-mouth kebabs, a Lucknowi specialty.",
+        "price": 380,
+        "image": "/assets/galouti-kebab.avif"
+      },
+      {
+        "name": "Chicken Biryani",
+        "description": "Aromatic rice and tender chicken pieces.",
+        "price": 350,
+        "image": "/assets/chicken-biryani.avif"
+      },
+      {
+        "name": "Butter Naan",
+        "description": "Soft and flaky bread, perfect for dipping in gravy.",
+        "price": 60,
+        "image": "/assets/butter-naan.avif"
+      },
+      {
+        "name": "Mint & Lemon Juice",
+        "description": "A refreshing blend of mint and lemon.",
+        "price": 100,
+        "image": "/assets/mint-lemon-juice.avif"
+      },
+      {
+        "name": "Onion Salad",
+        "description": "Freshly sliced onions with a sprinkle of chat masala.",
+        "price": 50,
+        "image": "/assets/onion-salad.avif"
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "image": "/assets/biryani-by-kilo.avif",
+    "offer": "Items at ₹299",
+    "title": "Biryani By Kilo",
+    "rating": 4.5,
+    "minTime": 25,
+    "maxTime": 35,
+    "name": "Biryani, Hyderabadi",
+    "place": "Noida",
+    "state": "Uttar Pradesh",
+    "veg": "no",
+    "price": 400,
+    "new": true,
+    "category": [
+      "biryani",
+      "indian"
+    ],
+    "offers": [
+      "biryani",
+      "kebab",
+      "khichdi",
+      "juice",
+      "shake"
+    ],
+    "offer_items": [
+      {
+        "name": "Hyderabadi Chicken Biryani",
+        "description": "Slow-cooked biryani in a clay pot, sealed with dough.",
+        "price": 350,
+        "image": "/assets/hyderabadi-biryani.avif"
+      },
+      {
+        "name": "Seekh Kebab",
+        "description": "Grilled minced meat skewers.",
+        "price": 250,
+        "image": "/assets/seekh-kebab.avif"
+      },
+      {
+        "name": "Dal Khichdi",
+        "description": "A comforting mix of rice and lentils.",
+        "price": 180,
+        "image": "/assets/khichdi.avif"
+      },
+      {
+        "name": "Rose Lassi",
+        "description": "A sweet, fragrant yogurt-based drink with rose syrup.",
+        "price": 120,
+        "image": "/assets/rose-lassi.avif"
+      },
+      {
+        "name": "Mango Shake",
+        "description": "A thick, refreshing shake with real mango pulp.",
+        "price": 150,
+        "image": "/assets/mango-shake.avif"
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "image": "/assets/dosa-junction.avif",
+    "offer": "Items at ₹99",
+    "title": "Dosa Junction",
+    "rating": 4.2,
+    "minTime": 15,
+    "maxTime": 20,
+    "name": "South Indian, Snacks",
+    "place": "Gurugram",
+    "state": "Haryana",
+    "veg": "pure",
+    "price": 200,
+    "new": true,
+    "category": [
+      "south-indian"
+    ],
+    "offers": [
+      "dosa",
+      "idli",
+      "upma",
+      "coffee",
+      "tea"
+    ],
+    "offer_items": [
+      {
+        "name": "Paper Dosa",
+        "description": "A long, crispy dosa, perfect for a light meal.",
+        "price": 110,
+        "image": "/assets/paper-dosa.avif"
+      },
+      {
+        "name": "Button Idli",
+        "description": "Miniature idlis, soft and delicious.",
+        "price": 90,
+        "image": "/assets/button-idli.avif"
+      },
+      {
+        "name": "Vegetable Upma",
+        "description": "A savory, thick porridge with fresh vegetables.",
+        "price": 80,
+        "image": "/assets/upma.avif"
+      },
+      {
+        "name": "Espresso Coffee",
+        "description": "A strong coffee shot to kick-start your day.",
+        "price": 100,
+        "image": "/assets/espresso.avif"
+      },
+      {
+        "name": "Lemon Tea",
+        "description": "A simple, refreshing tea with a slice of lemon.",
+        "price": 60,
+        "image": "/assets/lemon-tea.avif"
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "image": "/assets/healthy-bites.avif",
+    "offer": "Items at ₹199",
+    "title": "Healthy Bites",
+    "rating": 4.7,
+    "minTime": 20,
+    "maxTime": 30,
+    "name": "Healthy Food, Salads",
+    "place": "Sector 18, Noida",
+    "state": "Uttar Pradesh",
+    "veg": "pure",
+    "price": 300,
+    "new": true,
+    "category": [
+      "healthy",
+      "indian"
+    ],
+    "offers": [
+      "salad",
+      "sandwich",
+      "juice",
+      "poha",
+      "khichdi"
+    ],
+    "offer_items": [
+      {
+        "name": "Chickpea Salad",
+        "description": "A protein-rich salad with fresh chickpeas and vegetables.",
+        "price": 220,
+        "image": "/assets/chickpea-salad.avif"
+      },
+      {
+        "name": "Veggie Wrap",
+        "description": "A whole wheat wrap filled with fresh, crunchy vegetables.",
+        "price": 180,
+        "image": "/assets/veggie-wrap.avif"
+      },
+      {
+        "name": "Apple & Beetroot Juice",
+        "description": "A nutritious and refreshing juice blend.",
+        "price": 150,
+        "image": "/assets/apple-beetroot-juice.avif"
+      },
+      {
+        "name": "Poha",
+        "description": "A light and savory Indian breakfast dish.",
+        "price": 90,
+        "image": "/assets/poha.avif"
+      },
+      {
+        "name": "Masala Khichdi",
+        "description": "A wholesome and flavorful spiced rice and lentil dish.",
+        "price": 180,
+        "image": "/assets/khichdi.avif"
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "image": "/assets/tea-post.avif",
+    "offer": "Items at ₹69",
+    "title": "Tea Post",
+    "rating": 3.8,
+    "minTime": 10,
+    "maxTime": 15,
+    "name": "Beverages, Snacks",
+    "place": "Janakpuri",
+    "state": "Delhi",
+    "veg": "pure",
+    "price": 120,
+    "new": true,
+    "category": [
+      "beverages",
+      "snacks"
+    ],
+    "offers": [
+      "tea",
+      "coffee",
+      "somasa",
+      "kachori",
+      "dhokla"
+    ],
+    "offer_items": [
+      {
+        "name": "Special Masala Chai",
+        "description": "A strong, spiced Indian tea with a rich aroma.",
+        "price": 40,
+        "image": "/assets/masala-chai.avif"
+      },
+      {
+        "name": "Cold Coffee",
+        "description": "A chilled, creamy coffee perfect for a summer day.",
+        "price": 90,
+        "image": "/assets/cold-coffee.avif"
+      },
+      {
+        "name": "Paneer Samosa",
+        "description": "A crispy samosa filled with spiced cottage cheese.",
+        "price": 50,
+        "image": "/assets/paneer-samosa.avif"
+      },
+      {
+        "name": "Matar Kachori",
+        "description": "A deep-fried pastry filled with spiced green peas.",
+        "price": 60,
+        "image": "/assets/kachori.avif"
+      },
+      {
+        "name": "Dhokla",
+        "description": "A fluffy, light, and healthy steamed snack.",
+        "price": 70,
+        "image": "/assets/dhokla.avif"
+      }
+    ]
   }
 ]

@@ -1,0 +1,46 @@
+.search-dineout{
+    padding: 16px;
+    width: 85%;
+    border-radius: 15px;
+    font-size: 20px;
+    border: none;
+    background-color: #F0F0F5;
+
+    outline: none;
+
+}
+
+.profile-icon-dineout{
+    font-size: 50px;
+}
+
+.dineout-nav{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.banner-img-container{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.banner-img{
+    width: 1200px;
+
+}
+
+.dineout-img-text{
+    position: absolute;
+    color: white;
+    bottom: 50px;
+    left : 220px;
+    font-size: 2.4rem;
+    width: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

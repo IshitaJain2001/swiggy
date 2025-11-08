@@ -38,9 +38,12 @@ box-shadow:
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  padding: 0 40px;
+  padding: 0 150px;
   background-color: white;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-weight: 500;
+  position: relative;
+  z-index: 1000;
 }
 
 .logo {
@@ -49,10 +52,15 @@ box-shadow:
   gap: 20px;
   font-size: 20px;
 }
+.logo-container{
+  background-color: #FF5200;
+  border-radius: 14px;
+  padding: 6px 8px;
+}
 
 .logo img {
-  height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
   object-fit: contain;
 }
 
@@ -75,11 +83,37 @@ box-shadow:
 .icons {
   display: flex;
   align-items: center;
-  gap: 50px;
-  width: 50%;
+  gap: 20px;
+  width: 60%;
   justify-content: space-evenly;
 }
 
+.expend-icon{
+  font-size: 30px;
+  color: #FF5200;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.location-text{
+  font-size: "20px";
+  font-size: 18px;
+}
+.location-text:hover{
+  cursor: pointer;
+  color: #FF5200;
+
+}
+.swiggy-corporate{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  :hover {
+    color: #fc8019;
+    cursor: pointer;
+  }
+}
 .icon {
   display: flex;
   align-items: center;
@@ -213,7 +247,10 @@ a{
   opacity: 0.9;
 }
 
-
-
-
-
+.fixed-from-top{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 100;
+}
